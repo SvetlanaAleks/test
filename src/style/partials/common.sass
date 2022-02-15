@@ -1,0 +1,255 @@
+body
+	font-family: "Segoe UI", Helvetica, sans-serif
+	font-size: 20px
+
+// Font icons
+.fico
+	display: inline-block
+	font-size: 3rem
+	&::before
+		display: block
+
+
+html,
+body
+	overflow-x: hidden
+
+
+img
+	display: block
+	max-width: 100%
+
+
+svg
+	overflow: hidden
+
+
+button
+	display: block
+	padding: 0
+
+.container
+	margin: 0 auto
+	width: 100%
+	padding-left: 15px
+	padding-right: 15px
+	+rm(480)
+		width: 480px
+	+rm(640)
+		width: 640px
+	+rm(768)
+		width: 768px
+		padding-left: 25px
+		padding-right: 25px
+	+rm(1024)
+		width: 1024px
+	+rm(1220)
+		width: 1220px
+	+rm(1330)
+		width: 1330px
+
+.container-test
+	margin: 0 auto
+	width: 100%
+	padding-left: 15px
+	padding-right: 15px
+	+rm(480)
+		width: 480px
+	+rm(640)
+		width: 640px
+	+rm(768)
+		width: 768px
+		padding-left: 25px
+		padding-right: 25px
+	+rm(1024)
+		width: 1024px
+	+rm(1220)
+		width: 1220px
+
+
+
+
+.btn-light
+	display: block
+	outline: none
+	max-width: 100%
+	width: 100%
+	cursor: pointer
+	text-align: center
+	font-size: 14px
+	color: $dark-grey
+	border-radius: 100px
+	border: 1px solid #3DACD0
+	background: white
+	padding: 8px
+	transition: all .3s
+	font-family: "Segoe UI", Helvetica, sans-serif
+	&:hover
+		background-color: transparentize(#3DA1DA, .9)
+	+rm(480)
+		font-size: 16px
+	+rm(1330)
+		padding: 10px
+
+
+.text-s
+	font-size: 16px
+	line-height: 130%
+	+rm(480)
+		font-size: 18px
+
+
+.btn
+	font-family: "Segoe UI", Helvetica, sans-serif
+	display: block
+	outline: none
+	max-width: 100%
+	width: 100%
+	cursor: pointer
+	text-align: center
+	color: white
+	font-size: 16px
+	text-transform: uppercase
+	letter-spacing: 0.04em
+	position: relative
+	background: linear-gradient(0deg, #FB2170, #FB2170)
+	border-radius: 200px
+	border: none
+	height: 55px
+	line-height: 55px
+	font-weight: bold
+	transition: all .3s
+	&:disabled
+		background: #CBCBCB
+		opacity: 0.2
+		cursor: no-drop
+		&:hover
+			box-shadow: none
+	img
+		position: absolute
+		right: 20px
+		top: 50%
+		transform: translateY(-50%)
+		transition: all .3s
+	&:hover
+		box-shadow: 0px 7px 10px 0px transparentize(#FB2170, .5)
+		img
+			right: 10px
+
+
+
+.title
+	color: #111111
+	text-transform: uppercase
+	font-weight: 600
+	font-size: 24px
+	line-height: 1.2
+	+rm(480)
+		font-size: 28px
+	+rm(640)
+		font-size: 30px
+	+rm(768)
+		font-size: 34px
+	+rm(1024)
+		font-size: 42px
+	+rm(1220)
+		font-size: 48px
+	+rm(1330)
+		font-size: 55px
+
+//overlay
+.overlay
+	opacity: 0
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	width: 100%
+	height: 100%
+	z-index: 9
+	background: transparentize(#000000, .25)
+	transition: all .5s
+	pointer-events: none
+	&.active
+		opacity: 1
+		pointer-events: visible
+	+rm(1024)
+		display: none
+
+
+.line
+	height: 1px
+	width: 100%
+	background-color: #D7D7D7
+
+
+.footer
+	padding: 25px 0
+	text-align: center
+	color: #272727
+	font-size: 16px
+	line-height: 23px
+	+rm(640)
+		padding-top: 300px
+	+rm(768)
+		padding-top: 220px
+	+rm(1024)
+		padding-top: 300px
+		padding-bottom: 40px
+	+rm(1330)
+		padding-top: 225px
+		padding-bottom: 70px
+
+
+.slick-arrow
+	border: none
+	background: none
+	padding: 0
+	cursor: pointer
+	position: absolute
+	z-index: 2
+	&.slick-disabled
+		svg path
+			fill: #DEDEDE
+
+
+
+.center
+	background: linear-gradient(180deg, #F7FEED 0%, #E4F2FE 100%)
+	height: 100vh
+	min-height: 800px
+	display: flex
+	align-items: center
+	justify-content: center
+	padding: 20px 0
+	+rm(480)
+		min-height: 840px
+		background: url('../img/svg/ellipse_1.svg') no-repeat, url('../img/svg/ellipse_2.svg') no-repeat, url('../img/svg/ellipse_full.svg') no-repeat, linear-gradient(180deg, #F7FEED 0%, #E4F2FE 100%)
+		background-position: calc(50% - 160px) 113%,calc(50% - -360px) 10%,calc(50% - 330px) 7%
+		background-size: 170px, 240px, 170px
+	+rm(640)
+		background-position: calc(50% - 270px) 113%,calc(50% - -440px) 40%,calc(50% - 400px) 7%
+	+rm(768)
+		background-position: calc(50% - 290px) 113%,calc(50% - -560px) 40%,calc(50% - 470px) 9%
+		background-size: auto
+	+rm(1024)
+		background-position: calc(50% - 620px) 109%,calc(50% - -690px) 230px,calc(50% - 630px) 100px
+	+rm(1220)
+		background-position: calc(50% - 850px) 113%,calc(50% - -970px) 230px,calc(50% - 950px) 100px
+.title-test
+	font-size: 22px
+	line-height: 1.2
+	color: #272727
+	font-weight: bold
+	letter-spacing: 0.02em
+	+rm(480)
+		font-size: 24px
+	+rm(640)
+		font-size: 26px
+		line-height: 1.4
+	+rm(1024)
+		font-size: 30px
+	+rm(1220)
+		font-size: 35px
+		line-height: 47px

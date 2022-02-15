@@ -1,0 +1,160 @@
+.reviews
+	padding: 30px 0
+	+rm(640)
+		padding: 40px 0
+	+rm(768)
+		padding: 50px 0
+	+rm(1024)
+		padding: 60px 0
+	+rm(1330)
+		padding-top: 101px
+		padding-bottom: 144px
+	&__title
+		text-align: center
+		margin-bottom: 20px
+		+rm(640)
+			margin-bottom: 25px
+		+rm(1024)
+			margin-bottom: 35px
+		+rm(1330)
+			margin-bottom: 105px
+	.container
+		+rm(1024)
+			width: 100%
+			padding: 0
+	&__list
+		+rm(1024)
+			width: 90%
+			margin: auto
+	&__dots
+		li
+			+nlt
+				margin-right: 12px
+	.slick-slide
+		margin: 40px
+		+rm(640)
+			margin: 50px 10px
+			opacity: 0
+			transition: all .5s
+			&.slick-active
+				opacity: 1
+		+rm(1330)
+			transform: scale(.9)
+			pointer-events: none
+			opacity: 0
+			max-width: 670px
+			&.slick-active
+				opacity: .5
+			&.slick-current
+				&.slick-center
+					transform: scale(1)
+					pointer-events: visible
+					opacity: 1
+	.slick-list
+		margin: -40px
+		+rm(640)
+			margin: -50px -90px
+			padding: 0 80px
+	&__dots
+		margin-top: 20px
+		+rm(1024)
+			margin-top: 30px
+	.slick-arrow
+		+rm(640)
+			top: 168px
+			width: 60px
+			svg
+				width: 100%
+			&.prev
+				left: -10px
+			&.next
+				right: -10px
+		+rm(768)
+			width: 70px
+		+rm(1024)
+			top: 170px
+			&.prev
+				left: -40px
+			&.next
+				right: -40px
+
+.review
+	padding: 15px 15px 25px
+	background: #FFFFFF
+	box-shadow: 0px 12px 40px #E7E7E7
+	border-radius: 40px 40px 0px 40px
+	+rm(480)
+		padding: 20px 20px 30px
+	+rm(1330)
+		padding: 40px 50px 50px 43px
+	&__content
+		+rm(1024)
+			display: flex
+			align-items: flex-start
+	&__photo-wrap
+		display: flex
+		align-items: center
+		margin-bottom: 15px
+		+rm(1024)
+			margin-bottom: 0
+			margin-right: 20px
+			flex-shrink: 0
+		+rm(1330)
+			margin-right: 34px
+	&__photo
+		margin-right: 15px
+		max-width: 100px
+		flex-shrink: 0
+		+rm(1024)
+			margin-right: 0
+		+rm(1330)
+			max-width: 117px
+	&__wrap
+		&--desc
+			display: none
+		+rm(1024)
+			margin-bottom: 20px
+			&--mob
+				display: none
+			&--desc
+				display: block
+		+rm(1330)
+			margin-bottom: 27px
+	&__name
+		color: #272727
+		font-weight: bold
+		margin-bottom: 7px
+		font-size: 18px
+		line-height: 1.2
+		+rm(1330)
+			margin-bottom: 10px
+	&__city
+		font-weight: 600
+		font-size: 16px
+		color: #366CBD
+	&__text
+		color: #272727
+		font-size: 16px
+		line-height: 24px
+		max-height: 140px
+		overflow: hidden
+		transition: max-height .3s
+		&.show
+			max-height: 600px
+			transition: max-height .3s ease-in-out
+		+rm(1330)
+			line-height: 27px
+			max-height: 160px
+	&__btn
+		cursor: pointer
+		color: #555555
+		text-decoration: underline
+		font-style: italic
+		font-size: 16px
+		margin-top: 15px
+		+rm(1024)
+			margin-top: 20px
+		+rm(1330)
+			margin-top: 24px
+
+

@@ -1,0 +1,13 @@
+.step__content-top.js-step(data-step="2")
+	.step__content-left
+		.step__title-wrap
+			h2.step__title.title-test Ваш возраст
+			p.step__desc Введите ответ
+		.step__questions
+			.step__question
+				input.question-input.js-input-year(type="number" name="year" required)
+				span.step__error-year.js-error-year Возраст от 18 до 99
+	.step__content-right
+		picture
+			source(srcset="img/step-2.webp", type="image/webp")
+			img(src="img/step-2.jpg", alt="step photo")

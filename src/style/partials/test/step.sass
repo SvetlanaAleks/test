@@ -1,0 +1,182 @@
+.step
+	display: none
+	.container-test
+		height: 100%
+	.center__wrap
+		height: 100%
+	&__content
+		width: 100%
+		height: 100%
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+	&__content-top
+		margin: auto 0
+		width: 100%
+		display: none
+		&.active
+			display: block
+		+rm(768)
+			justify-content: space-between
+			align-items: flex-start
+			&.active
+				display: flex
+		+rm(1220)
+			padding-top: 150px
+	&__content-left
+		margin-bottom: 20px
+		+rm(768)
+			margin-bottom: 0
+			margin-right: 30px
+			flex: 1
+		+rm(1220)
+			max-width: 670px
+			width: 100%
+	&__title-wrap
+		margin-bottom: 10px
+		+rm(640)
+			margin-bottom: 20px
+		+rm(1220)
+			margin-bottom: 38px
+	&__desc
+		color: #5F5F5F
+		font-size: 16px
+		line-height: 1.2
+		margin-bottom: 15px
+		margin-top: 5px
+		+rm(640)
+			margin-top: 8px
+	&__content-right
+		max-width: 250px
+		width: 100%
+		margin: auto
+		font-size: 0
+		box-shadow: 0px 4px 15px rgba(38, 8, 55, 0.1)
+		border-radius: 20px 20px 0px 20px
+		overflow: hidden
+		+rm(480)
+			max-width: 290px
+		+rm(768)
+			margin: 0
+		+rm(1024)
+			max-width: 390px
+			margin-top: 10px
+		+rm(1220)
+			max-width: 440px
+	&__progress
+		margin-bottom: 20px
+		+rm(768)
+			margin-bottom: 35px
+		+rm(1220)
+			margin-bottom: 80px
+	&__content-bottom
+		margin-top: auto
+		width: 100%
+	&__question
+		+nlt
+			margin-bottom: 10px
+		+rm(480)
+			+nlt
+				margin-bottom: 15px
+		+rm(1220)
+			+nlt
+				margin-bottom: 25px
+	&__error-year
+		font-style: italic
+		margin-top: 5px
+		font-size: 12px
+		color: red
+		display: none
+
+.question-item
+	background: linear-gradient(180deg, #FFFFFF 0%, #F7F7F7 100%)
+	box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.12), inset 0px -6px 22px #FFFFFF
+	border-radius: 100px
+	height: 60px
+	display: flex
+	align-items: center
+	padding: 0 15px
+	cursor: pointer
+	&.active
+		border: 1px solid #366fbe
+	+rm(640)
+		padding: 0 25px
+	+rm(1024)
+		height: 70px
+		padding: 0 20px
+	+rm(1220)
+		height: 80px
+		padding: 0 30px
+	&__ico-wrap
+		margin-right: 10px
+		flex-shrink: 0
+		width: 40px
+		+rm(1220)
+			margin-right: 23px
+	&__text
+		font-size: 16px
+		line-height: 30px
+		letter-spacing: 0.04em
+		text-transform: uppercase
+		color: #272727
+
+.question-input
+	background: linear-gradient(180deg, #FFFFFF 0%, #F7F7F7 100%)
+	box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.12), inset 0px -6px 22px #FFFFFF
+	border-radius: 20px 20px 0px 20px
+	height: 60px
+	padding: 0 15px
+	cursor: pointer
+	border: none
+	width: 100%
+	box-sizing: border-box
+	&:focus
+		outline: none
+	+rm(1024)
+		height: 70px
+		padding: 0 20px
+	+rm(1220)
+		height: 80px
+		padding: 0 30px
+
+
+
+.question-point
+	background: linear-gradient(180deg, #FFFFFF 0%, #F7F7F7 100%)
+	box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.12), inset 0px -6px 22px #FFFFFF
+	border-radius: 20px 20px 0px 20px
+	height: 60px
+	display: flex
+	align-items: center
+	padding: 0 15px
+	cursor: pointer
+	transition: all .3s
+	&.active
+		margin-left: 20px
+		.fico
+			display: block
+		.question-point__text
+			color: #2E36FD
+	+rm(1024)
+		height: 70px
+		padding: 0 20px
+	+rm(1220)
+		height: 80px
+		padding: 0 30px
+		&.active
+			padding-left: 30px
+	.fico-check
+		color: #2E36FD
+		font-size: 19px
+		margin-right: 22px
+		display: none
+		transition: all .3s
+	&__text
+		font-weight: 600
+		font-size: 16px
+		line-height: 30px
+		letter-spacing: 0.04em
+		text-transform: uppercase
+		color: #272727
+		transition: all .3s

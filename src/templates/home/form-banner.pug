@@ -1,0 +1,20 @@
+.form-banner
+	.form-banner__top
+		.form-banner__top-left
+			h4.form-banner__title Запишись на программу из 10&nbsp;уроков и аудио практик сегодня
+			p.form-banner__desc.text-s пока еще действует спец цена и получи 
+				span 2 бонусных урока 
+				| «Деньги. Используй кризис. Работай в удовольствие» и «Отношения: Я, партнер, родители»
+		.form-banner__timer
+			include timer
+	.form-banner__bottom
+		.form-banner__price
+			p.form-banner__price-item.active.js-price(data-type="1") 29₽
+			p.form-banner__price-item.js-price(data-type="2") 89₽
+			p.form-banner__price-item.js-price(data-type="3") 390₽
+			p.form-banner__price-item.js-price(data-type="4") 890₽
+		form.form-banner__form.form(action="/", method="post") 
+			input.form__input(type="text", name="name" placeholder="Ваше имя")
+			input.form__input(type="email", name="email" placeholder="Ваш E-mail")
+			button.form__btn.btn Записаться
+				img(src="img/svg/arrow_btn.svg", alt="arrow")

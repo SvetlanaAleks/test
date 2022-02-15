@@ -1,0 +1,248 @@
+.composition
+	padding: 30px 0
+	+rm(640)
+		padding: 40px 0
+	+rm(768)
+		padding: 50px 0
+	+rm(1024)
+		padding: 60px 0
+	+rm(1330)
+		padding-top: 110px
+		padding-bottom: 103px
+	&__title
+		margin-bottom: 20px
+		text-align: center
+		+rm(640)
+			margin-bottom: 30px
+		+rm(1024)
+			margin-bottom: 60px
+		+rm(1220)
+			margin-bottom: 90px
+		+rm(1330)
+			margin-bottom: 140px
+	&__desc
+		background: linear-gradient(180deg, #F7FEED 0%, #E4F2FE 100%)
+		border-radius: 20px 20px 0px 20px
+		padding: 15px 15px 15px 40px
+		position: relative
+		margin-left: 25px
+		margin-bottom: 30px
+		+rm(480)
+			margin-left: 40px
+			padding: 20px 20px 20px 50px
+		+rm(640)
+			padding: 20px 20px 20px 55px
+		+rm(768)
+			padding: 30px 30px 30px 85px
+			margin-bottom: 40px
+		+rm(1024)
+			display: flex
+			align-items: center
+			justify-content: space-between
+			margin-left: 0
+			padding: 45px
+			margin-bottom: 60px
+		+rm(1220)
+			padding: 55px
+			margin-bottom: 80px
+		+rm(1330)
+			padding: 70px
+			margin-bottom: 106px
+	&__photo
+		position: absolute
+		top: 50%
+		left: 0
+		transform: translate(-50%, -50%)
+		max-width: 70px
+		+rm(480)
+			max-width: 90px
+		+rm(768)
+			max-width: 120px
+			left: 15px
+		+rm(1024)
+			left: 50%
+			transform: translate(-50%,-50%)
+			top: 50%
+			max-width: 180px
+		+rm(1220)
+			max-width: 220px
+		+rm(1330)
+			max-width: 290px
+	&__text
+		color: #272727
+		font-size: 18px
+		line-height: 1.2
+		+nlt
+			margin-bottom: 15px
+		span
+			font-weight: 700
+		+rm(480)
+			font-size: 20px
+		+rm(640)
+			font-size: 22px
+		+rm(1024)
+			width: 100%
+			max-width: 325px
+			+nlt
+				margin-bottom: 0
+		+rm(1220)
+			font-size: 24px
+			max-width: 360px
+		+rm(1330)
+			font-size: 26px
+			line-height: 35px
+			max-width: 395px
+	&__bottom
+		counter-reset: section
+		max-width: 290px
+		width: 100%
+		margin: auto
+		max-height: 690px
+		overflow: hidden
+		transition: max-height .3s
+		&.show
+			max-height: 1500px
+			transition: max-height .3s ease-in-out
+		+rm(640)
+			max-width: 100%
+			max-height: 560px
+		+rm(1024)
+			display: flex
+			justify-content: center
+			align-items: flex-start
+			flex-wrap: wrap
+			max-height: 250px
+		+rm(1330)
+			max-height: 285px
+
+	&__lesson
+		+nlt
+			margin-bottom: 20px
+		+rm(480)
+			+nlt
+				margin-bottom: 25px
+		+rm(1024)
+			&:not(:nth-of-type(-n+3))
+				margin-top: 30px
+			&:not(:nth-child(3n))
+				margin-right: 35px
+			+nlt
+				margin-bottom: 0
+		+rm(1220)
+			&:not(:nth-child(3n))
+				margin-right: 40px
+		+rm(1330)
+			&:not(:nth-child(3n))
+				margin-right: 70px
+	&__btn
+		margin-top: 30px
+		img
+			display: none
+		&:hover
+			img
+				right: 20px
+		+rm(375)
+			img
+				display: block
+				transform: rotate(90deg) translateY(-50%)
+				transform-origin: center top
+		+rm(480)
+			max-width: 330px
+			width: 100%
+			margin: auto
+			margin-top: 30px
+		+rm(1024)
+			margin-top: 40px
+		+rm(1220)
+			margin-top: 50px
+		+rm(1330)
+			margin-top: 70px
+
+.lesson
+	+rm(640)
+		display: flex
+		align-items: center
+	+rm(1024)
+		display: block
+		width: 100%
+		max-width: 300px
+	+rm(1220)
+		max-width: 330px
+	&__top
+		background: url('../img/lesson_bg.jpg') no-repeat center
+		background-size: cover
+		padding: 20px 10px
+		border-radius: 20px 20px 0px 20px
+		position: relative
+		height: 150px
+		max-width: 290px
+		width: 100%
+		margin: auto
+		margin-bottom: 8px
+		&::after
+			counter-increment: section
+			content: counter(section)
+			display: block
+			position: absolute
+			bottom: 20px
+			right: 20px
+			color: white
+			font-size: 50px
+			font-weight: 600
+			letter-spacing: 0.02em
+		+rm(480)
+			padding: 20px
+			max-width: 330px
+			height: 170px
+			&::after
+				font-size: 60px
+		+rm(640)
+			margin-right: 20px
+			flex-shrink: 0
+			margin-bottom: 0
+		+rm(1024)
+			margin-bottom: 20px
+		+rm(1330)
+			margin-right: 0
+			margin-bottom: 37px
+			padding: 28px 23px
+			&::after
+				bottom: 14px
+				right: 25px
+	&__title
+		width: 143px
+		font-weight: bold
+		font-size: 17px
+		line-height: 1.2
+		letter-spacing: 0.02em
+		color: #272727
+		+rm(1330)
+			width: 140px
+			line-height: 23px
+	&__label
+		display: inline-block
+		position: absolute
+		top: 20px
+		right: 20px
+		padding: 5px 10px
+		font-weight: bold
+		font-size: 12px
+		text-align: center
+		letter-spacing: 0.02em
+		color: #272727
+		border-radius: 7px
+		background: white
+		+rm(1330)
+			top: 17px
+			right: 23px
+			padding: 9px 18px
+	&__desc
+		font-size: 16px
+		line-height: 1.2
+		letter-spacing: 0.02em
+		color: #272727
+		text-align: center
+		+rm(640)
+			text-align: left
+		+rm(1330)
+			line-height: 160%

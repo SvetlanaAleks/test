@@ -1,0 +1,59 @@
++rm(768)
+	.no-webp .main
+		background: url('../img/svg/ellipse.svg') no-repeat, url('../img/svg/ellipse_full.svg') no-repeat, url('../img/header_bg.png') no-repeat, linear-gradient(180deg, #F7FEED 0%, #E4F2FE 100%)
+	.webp .main
+		background: url('../img/svg/ellipse_1.svg') no-repeat,url('../img/svg/ellipse_full.svg') no-repeat, url('../img/header_bg.webp') no-repeat, linear-gradient(180deg, #F7FEED 0%, #E4F2FE 100%)
+	.no-webp .main, .webp .main
+		background-size:  auto,auto,1440px
+		background-position: calc(50% - 290px) 113%,calc(50% - 470px) 9%,calc(50% - -390px) top,center
++rm(1024)
+	.no-webp .main, .webp .main
+		background-size: auto,auto,1540px
+		background-position: calc(50% - 450px) 113%,calc(50% - 620px) 9%,calc(50% - -430px) top,center
++rm(1220)
+	.no-webp .main, .webp .main
+		background-size: auto,auto,1540px
+		background-position: calc(50% - 740px) 106%,calc(50% - 941px) 15%,calc(50% - -410px) top,center
+	
+.main
+	&__title
+		margin-bottom: 15px
+		+rm(480)
+			margin-bottom: 30px
+		+rm(768)
+			width: 75%
+		+rm(1024)
+			width: 55%
+			margin-bottom: 45px
+		+rm(1220)
+			width: 50%
+			margin-bottom: 60px
+	&__desc
+		margin-bottom: 20px
+		+rm(480)
+			margin-bottom: 30px
+		+rm(640)
+			margin-bottom: 35px
+			width: 90%
+		+rm(768)
+			width: 54%
+		+rm(1024)
+			margin-bottom: 50px
+		+rm(1220)
+			width: 48%
+			margin-bottom: 65px
+	&__text
+		color: #444444
+		+nlt
+			margin-bottom: 10px
+		+rm(480)
+			+nlt
+				margin-bottom: 12px
+		+rm(640)
+			line-height: 28px
+		+rm(1220)
+			+nlt
+				margin-bottom: 23px
+	&__btn
+		+rm(480)
+			max-width: 275px

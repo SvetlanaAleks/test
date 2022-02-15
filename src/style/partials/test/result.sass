@@ -1,0 +1,225 @@
+.no-backgroundcliptext .result__info span
+	color: #366CBD
+
+.backgroundcliptext .result__info span
+	background: linear-gradient(96.95deg, #3DA1DA -15.73%, #366CBD 44.6%, #3DACD0 106.25%)
+	-webkit-background-clip: text
+	-webkit-text-fill-color: transparent
+	
+.result
+	display: none
+	position: relative
+	z-index: 1
+	&.active
+		display: flex
+	&__content
+		background: #FFFFFF
+		border-radius: 50px 50px 0px 50px
+		padding: 15px
+		+rm(640)
+			padding: 25px
+		+rm(1024)
+			display: flex
+			align-items: center
+			justify-content: space-between
+			padding: 40px
+		+rm(1480)
+			position: relative
+			background: none
+			padding: 25px
+			&::before
+				content: ''
+				display: block
+				position: absolute
+				background: #FFFFFF
+				border-radius: 50px 50px 0px 50px
+				top: -20px
+				bottom: -20px
+				right: -80px
+				left: -80px
+				z-index: -1
+	&__left
+		+rm(1024)
+			max-width: 600px
+			width: 100%
+		+rm(1220)
+			max-width: 735px
+	&__title
+		text-align: center
+		font-size: 22px
+		line-height: 1.2
+		margin-bottom: 10px
+		span
+			letter-spacing: 0.02em
+			text-transform: uppercase
+			color: #0E101D
+			font-weight: 600
+			font-size: 30px
+			display: block
+		+rm(480)
+			font-size: 24px
+			span
+				font-size: 40px
+		+rm(640)
+			span
+				font-size: 50px
+		+rm(768)
+			span
+				font-size: 60px
+		+rm(1024)
+			text-align: left
+			span
+				font-size: 64px
+				line-height: 80px
+		+rm(1220)
+			font-size: 26px
+			margin-bottom: 10px
+			span
+				font-size: 70px
+				line-height: 80px
+	&__desc
+		font-weight: 600
+		color: #272727
+		letter-spacing: 0.02em
+		margin-bottom: 10px
+		text-align: center
+		+rm(640)
+			margin-bottom: 20px
+		+rm(1024)
+			text-align: left
+			margin-bottom: 30px
+	&__info
+		text-align: center
+		font-size: 20px
+		line-height: 1.2
+		margin-bottom: 15px
+		span
+			text-transform: uppercase
+			font-weight: bold
+			font-size: 50px
+			display: block
+			line-height: 1
+		+rm(480)
+			span
+				font-size: 60px
+		+rm(640)
+			font-size: 22px
+			margin-bottom: 25px
+			span
+				display: inline-block
+				font-size: 70px
+				margin-right: 10px
+		+rm(1024)
+			text-align: left
+			margin-bottom: 5px
+			span
+				margin-right: 15px
+	&__text
+		font-size: 16px
+		line-height: 21px
+		letter-spacing: 0.02em
+		color: #272727
+		margin-bottom: 20px
+		text-align: center
+		+rm(1024)
+			text-align: left
+			margin-bottom: 45px
+	&__main
+		background: linear-gradient(96.95deg, #3DA1DA -15.73%, #366CBD 44.6%, #3DACD0 106.25%)
+		border-radius: 30px 30px 0px 30px
+		padding: 10px
+		color: white
+		+rm(480)
+			padding: 20px
+		+rm(1024)
+			padding: 26px 32px
+	&__main-title
+		font-weight: bold
+		text-align: center
+		margin-bottom: 5px
+		+rm(480)
+			margin-bottom: 10px
+		+rm(1024)
+			text-align: left
+			line-height: 28px
+			width: 87%
+			margin-bottom: 15px
+	&__main-text
+		font-size: 14px
+		line-height: 1.2
+		text-align: center
+		margin-bottom: 10px
+		+rm(480)
+			margin-bottom: 20px
+		+rm(640)
+			font-size: 15px
+		+rm(1024)
+			text-align: left
+			margin-bottom: 30px
+	&__bottom
+		+rm(768)
+			display: flex
+			align-items: center
+			justify-content: space-between
+	&__price
+		display: flex
+		justify-content: space-between
+		align-items: center
+		margin-bottom: 15px
+		+rm(768)
+			max-width: 400px
+			width: 100%
+			margin: auto
+			margin-bottom: 0
+		+rm(1220)
+			margin: 0
+			max-width: inherit
+			justify-content: flex-start
+	&__price-item
+		width: calc(100%/4 - 2px)
+		text-align: center
+		cursor: pointer
+		padding: 7px 2px
+		font-size: 18px
+		border-radius: 16px
+		transition: all .3s
+		&:hover
+			background-color: transparentize(white, .9)
+		&.active
+			background: #FFFFFF
+			box-shadow: 0px 7px 12px rgba(0, 0, 0, 0.11)
+			color: #3252F3
+			font-weight: bold
+		+rm(480)
+			padding: 13px 2px
+			width: calc(100%/4 - 10px)
+		+rm(1024)
+			+nlt
+				margin-right: 5px
+	&__btn
+		display: block
+		text-decoration: none
+		outline: none
+		max-width: 100%
+		width: 100%
+		cursor: pointer
+		text-align: center
+		font-size: 14px
+		border-radius: 100px
+		border: 2px solid #fff
+		padding: 8px
+		font-weight: bold
+		color: white
+		transition: all .3s
+		font-family: "Segoe UI", Helvetica, sans-serif
+		background: none
+		&:hover
+			background: transparentize(#fff, .9)
+		+rm(480)
+			padding: 10px
+			max-width: 300px
+			margin: auto
+		+rm(768)
+			max-width: 220px
+		+rm(1024)
+			max-width: 185px

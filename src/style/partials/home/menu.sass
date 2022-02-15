@@ -1,0 +1,84 @@
+.menu
+	padding: 13px 0
+	background: #FFFFFF
+	box-shadow: 0px 4px 15px rgba(38, 8, 55, 0.1)
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	z-index: 3
+	+rm(1024)
+		position: absolute
+		padding: 16px 0
+	&__wrapper
+		display: flex
+		align-items: center
+		justify-content: space-between
+	&__links
+		display: none
+		+rm(1024)
+			display: block
+	&__item
+		+rm(1024)
+			+nlt
+				margin-right: 40px
+		+rm(1330)
+			+nlt
+				margin-right: 75px
+	&__btn
+		max-width: 230px
+		+rm(480)
+			max-width: 250px
+		+rm(1330)
+			max-width: 260px
+	&__burger
+		+rm(1024)
+			display: none
+
+.nav
+	+rm(1024)
+		display: flex
+		align-items: center
+	&__link
+		+rm(1024)
+			color: #444444
+			font-size: 16px
+			line-height: 24px
+			text-decoration: none
+			&:hover
+				text-decoration: underline
+
+
+.burger
+	display: flex
+	flex-direction: column
+	align-items: flex-end
+	justify-content: center
+	cursor: pointer
+	width: 30px
+	height: 20px
+	&__line
+		height: 2px
+		display: block
+		background-color: #222222
+		position: relative
+		transition: all .4s
+		width: 100%
+		&:nth-child(1)
+			top: -7px
+		&:nth-child(2)
+			width: 20px
+		&:nth-child(3)
+			bottom: -7px
+			width: 25px
+	&--active
+		.burger__line
+			width: 35px
+			&:nth-child(1)
+				transform: rotate(45deg)
+				top: 2px
+			&:nth-child(2)
+				display: none
+			&:nth-child(3)
+				transform: rotate(-45deg)
+				bottom: 0

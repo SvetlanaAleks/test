@@ -1,0 +1,220 @@
+.benefits
+	padding: 30px 0
+	background: linear-gradient(180deg, #F7FEED 0%, #E4F2FE 100%)
+	+rm(640)
+		padding: 40px 0
+	+rm(768)
+		padding: 50px 0
+	+rm(1024)
+		padding: 60px 0
+		background: url('../img/svg/ellipse.svg') no-repeat, url('../img/svg/ellipse_full.svg') no-repeat, linear-gradient(180deg, #F7FEED 0%, #E4F2FE 100%)
+		background-position: calc(50% - -950px) 90px,calc(50% - 970px) 540px,center top
+	+rm(1330)
+		padding-top: 93px
+		padding-bottom: 127px
+		background-position: calc(50% - -950px) 90px,calc(50% - 970px) 540px,center top
+	&__title
+		text-align: center
+		margin-bottom: 5px
+		+rm(640)
+			margin-bottom: 10px
+		+rm(1330)
+			margin-bottom: 20px
+	&__desc
+		color: #272727
+		font-weight: bold
+		font-size: 20px
+		line-height: 1.2
+		margin-bottom: 20px
+		text-align: center
+		+rm(640)
+			font-size: 22px
+			margin-bottom: 30px
+		+rm(1024)
+			font-size: 24px
+			margin-bottom: 45px
+		+rm(1330)
+			font-size: 26px
+			margin-bottom: 52px
+	&__list
+		+rm(768)
+			display: flex
+			justify-content: space-between
+			flex-wrap: wrap
+	&__item
+		+nlt
+			margin-bottom: 15px
+		+rm(768)
+			+nlt
+				margin-bottom: 0
+			&:nth-of-type(-n+2)
+				width: calc(100%/2 - 10px)
+				margin-bottom: 20px
+		+rm(1024)
+			width: calc(100%/3 - 10px)
+			&:nth-of-type(-n+2)
+				width: calc(100%/3 - 10px)
+				margin-bottom: 0
+		+rm(1220)
+			width: calc(100%/3 - 15px)
+			&:nth-of-type(-n+2)
+				width: calc(100%/3 - 15px)
+		+rm(1330)
+			width: 100%
+			max-width: 400px
+			&:nth-of-type(-n+2)
+				width: 100%
+
+.no-backgroundcliptext .benefit__main
+	color: #3DACD0
+
+.backgroundcliptext .benefit__main
+	background: linear-gradient(96.95deg, #3DA1DA -15.73%, #366CBD 44.6%, #3DACD0 106.25%);
+	-webkit-background-clip: text
+	-webkit-text-fill-color: transparent
+
+
+.benefit
+	background: #FFFFFF
+	box-shadow: 0px 4px 15px rgba(38, 8, 55, 0.1)
+	border-radius: 20px 20px 0px 20px
+	position: relative
+	padding: 15px 20px 20px
+	text-align: center
+	&::before
+		content: ''
+		display: block
+		position: absolute
+		bottom: 0
+		left: 50%
+		transform: translateX(-50%)
+		height: 5px
+		width: 25px
+		background: linear-gradient(96.95deg, #3DA1DA -15.73%, #366CBD 44.6%, #3DACD0 106.25%)
+	&--reverse
+		.benefit
+			&__main
+				margin-bottom: 0
+			&__desc
+				margin-bottom: 7px
+	&--big
+		.benefit
+			&__main
+				span
+					font-size: calc((55px + 20px)/2)
+	+rm(480)
+		&--big
+			.benefit
+				&__main
+					span
+						font-size: calc((65px + 20px)/2)
+	+rm(640)
+		padding: 25px 20px 30px
+		&--big
+			.benefit
+				&__main
+					span
+						font-size: calc((75px + 20px)/2)
+		&::before
+			height: 7px
+			width: 33px
+	+rm(768)
+		padding: 20px
+	+rm(1024)
+		padding: 30px 15px
+		&--reverse
+			padding: 80px 15px 40px 15px
+	+rm(1220)
+		padding: 30px 36px 55px 36px
+		&--reverse
+			padding: 60px 36px 55px 36px
+			.benefit
+				&__desc
+					width: 87%
+					margin: auto
+					margin-bottom: 15px
+				&__main
+					span
+						font-size: calc(130px/2)
+						margin-top: 0px
+		&--big
+			.benefit
+				&__main
+					span
+						font-size: calc((100px + 20px)/2)
+	+rm(1330)
+		padding: 30px 36px 55px 36px
+		&--reverse
+			padding: 50px 36px 45px 36px
+			.benefit
+				&__desc
+					width: 87%
+					margin: auto
+					margin-bottom: 20px
+				&__main
+					span
+						font-size: calc(130px/2)
+						margin-top: 0px
+		&--big
+			.benefit
+				&__main
+					span
+						font-size: calc((135px + 20px)/2)
+				
+	&__main
+		font-size: 55px
+		line-height: 1.1
+		font-weight: 600
+		margin-bottom: 7px
+		span
+			font-size: calc(55px/2)
+			text-transform: uppercase
+			margin-left: 3px
+		+rm(480)
+			font-size: 65px
+			span
+				font-size: calc(65px/2)
+				margin-left: 7px
+		+rm(640)
+			font-size: 75px
+			span
+				font-size: calc(75px/2)
+		+rm(1024)
+			font-size: 90px
+			height: 160px
+			span
+				font-size: calc(90px/2)
+				display: block
+				margin-left: 0
+				line-height: 100%
+		+rm(1220)
+			font-size: 100px
+			margin-bottom: 15px
+			height: 170px
+			span
+				font-size: calc(100px/2)
+		+rm(1330)
+			font-size: 120px
+			margin-bottom: 25px
+			height: 195px
+			span
+				font-size: calc(120px/2)
+				margin-top: -10px
+	&__desc
+		font-weight: 600
+		font-size: 18px
+		line-height: 1.2
+		width: 89%
+		margin: auto
+		+rm(480)
+			font-size: 20px
+		+rm(640)
+			font-size: 22px
+			width: 75%
+		+rm(1024)
+			font-size: 24px
+			width: 100%
+			margin: 0
+		+rm(1330)
+			font-size: 26px
+			line-height: 34px

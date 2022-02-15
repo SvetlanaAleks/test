@@ -1,0 +1,68 @@
+.menu-mobile
+	display: none
+	text-align: center
+	position: relative
+	// padding-bottom: 35px
+	position: relative
+	overflow: hidden
+	font-size: 20px
+	color: white
+	bottom: 0
+	display: block
+	position: fixed
+	right: 0
+	top: 0
+	z-index: 11
+	transform: translateX(100%)
+	width: 100%
+	padding-top: 15px
+	transition: all 1s
+	background: url(../img/svg/ellipse.svg) no-repeat calc(50% - -180px) 85%, linear-gradient(180deg, #F7FEED 0%, #E4F2FE 100%)
+	&--active
+		transform: translateX(0)
+	+rm(480)
+		width: 400px
+	+rm(1024)
+		display: none
+	&__wrap
+		display: flex
+		flex-direction: column
+		align-items: center
+		height: 100%
+		overflow-y: auto
+		justify-content: space-between
+		padding: 0 25px
+	&__top
+		margin-bottom: 30px
+		display: flex
+		align-items: center
+		width: 100%
+		justify-content: space-between
+		padding-bottom: 17px
+		border-bottom: 1px solid grey
+	&__logo
+		font-size: 30px
+		color: grey
+	&__nav-list
+		margin: auto
+		display: flex
+		flex-direction: column
+		padding-top: 30px
+		padding-bottom: 30px
+		min-height: 255px
+		width: 100%
+		text-align: center
+	&__bottom
+		width: 100%
+		margin-bottom: 30px
+	&__btn
+		width: 100%
+
+.nav-list
+	&__item
+		+nlt
+			margin-bottom: 20px
+	&__link
+		font-size: 23px
+		text-decoration: none
+		color: #444444

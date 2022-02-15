@@ -1,0 +1,29 @@
+.no-backgroundcliptext .timer-block__wrap
+	color: #3DACD0
+
+.backgroundcliptext .timer-block__wrap
+	background: linear-gradient(96.95deg, #3DA1DA -15.73%, #366CBD 44.6%, #3DACD0 106.25%)
+	-webkit-background-clip: text
+	-webkit-text-fill-color: transparent
+
+
+
+
+.timer-block
+	&__text
+		color: #333333
+		font-size: 14px
+		margin-bottom: 5px
+		text-align: center
+	&__wrap
+		display: flex
+		align-items: flex-start
+		justify-content: center
+		letter-spacing: 0.04em
+		font-size: 46px
+		+rm(480)
+			font-size: 56px
+		+rm(768)
+			font-size: 60px
+		+rm(1330)
+			font-size: 70px

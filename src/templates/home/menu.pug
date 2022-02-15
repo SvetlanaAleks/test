@@ -1,0 +1,20 @@
+.menu
+	.container
+		.menu__wrapper
+			ul.menu__links.nav
+				li.nav__item.menu__item
+					a.nav__link.js-scroll(href="#information") Что такое маркетплейс
+				li.nav__item.menu__item
+					a.nav__link.js-scroll(href="#composition") Про обучение
+				li.nav__item.menu__item
+					a.nav__link.js-scroll(href="#order") Как заказать
+				li.nav__item.menu__item
+					a.nav__link.js-scroll(href="#questions") Для кого
+				li.nav__item.menu__item
+					a.nav__link.js-scroll(href="#reviews") Отзывы
+			button.menu__btn.btn-light.js-scroll(data-target="#order") Записаться на программу
+			.menu__burger.burger.js-burger(data-target="#js-mobile-menu")
+				span.burger__line
+				span.burger__line
+				span.burger__line
+include menu-mob

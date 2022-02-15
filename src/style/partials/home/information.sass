@@ -1,0 +1,361 @@
+.no-backgroundcliptext .information__bottom-right span
+	color: #3DACD0
+
+.backgroundcliptext .information__bottom-right span
+	background: linear-gradient(96.95deg, #3DA1DA -15.73%, #366CBD 44.6%, #3DACD0 106.25%)
+	-webkit-background-clip: text
+	-webkit-text-fill-color: transparent
+
+	
+.information
+	padding-top: 30px
+	padding-bottom: 30px
+	+rm(640)
+		padding-top: 300px
+		padding-bottom: 40px
+	+rm(768)
+		padding-top: 240px
+		padding-bottom: 50px
+	+rm(1024)
+		padding-top: 300px
+		padding-bottom: 60px
+		position: relative
+		background: url('../img/svg/ellipse.svg') no-repeat, url('../img/svg/ellipse_full.svg') no-repeat
+		background-position: calc(50% - 490px) 1270px,calc(50% - -650px) 990px
+	+rm(1220)
+		padding-top: 220px
+		background-position: calc(50% - 580px) 1170px,calc(50% - -720px) 990px
+	+rm(1330)
+		padding-top: 245px
+		padding-bottom: 70px
+		background-position: calc(50% - 620px) 1330px,calc(50% - -960px) 1100px
+	&__circle
+		display: none
+		+rm(1024)
+			pointer-events: none
+			display: block
+			position: absolute
+			border-radius: 50%
+			filter: blur(80px)
+			&--blue
+				top: 230px
+				right: calc(50% - 1050px)
+				width: 296px
+				height: 296px
+				background: linear-gradient(96.95deg, #3DA1DA -15.73%, #366CBD 44.6%, #3DACD0 106.25%)
+				opacity: 0.3
+			&--green
+				top: 700px
+				left: calc(50% - 1080px)
+				width: 402px
+				height: 402px
+				background: #F6FEEE
+		+rm(1330)
+			&--blue
+				top: 230px
+				right: calc(50% - 1050px)
+			&--green
+				top: 700px
+				left: calc(50% - 1080px)
+	&__title
+		text-align: center
+		margin-bottom: 15px
+		+rm(640)
+			margin-bottom: 20px
+		+rm(768)
+			margin-bottom: 30px
+		+rm(1024)
+			margin-bottom: 40px
+		+rm(1330)
+			margin-bottom: 70px
+	&__top
+		margin-bottom: 20px
+		+rm(480)
+			margin-bottom: 30px
+		+rm(768)
+			display: flex
+			align-items: flex-end
+			justify-content: space-between
+			margin-bottom: 0
+			padding-left: 15px
+	&__photo
+		display: none
+		+rm(768)
+			display: block
+			max-width: 310px
+			width: 100%
+			flex-shrink: 0
+			margin-right: 20px
+		+rm(1024)
+			max-width: 400px
+		+rm(1220)
+			max-width: 430px
+			margin-right: 40px
+		+rm(1330)
+			max-width: 480px
+			margin-right: 51px
+	&__desc-wrap
+		+rm(768)
+			margin-bottom: 30px
+		+rm(1024)
+			margin-bottom: 45px
+		+rm(1220)
+			margin-bottom: 55px
+		+rm(1330)
+			margin-bottom: 70px
+	&__desc
+		margin-bottom: 20px
+		+rm(1024)
+			margin-bottom: 35px
+		+rm(1220)
+			margin-bottom: 55px
+		+rm(1330)
+			margin-bottom: 70px
+	&__text
+		color: #272727
+		font-size: 18px
+		line-height: 1.2
+		&--bold
+			font-weight: 700
+		+nlt
+			margin-bottom: 12px
+		+rm(480)
+			font-size: 20px
+		+rm(640)
+			font-size: 22px
+		+rm(1024)
+			line-height: 150%
+			&:last-of-type
+				width: 89%
+		+rm(1024)
+			font-size: 24px
+		+rm(1330)
+			font-size: 26px
+			+nlt
+				margin-bottom: 21px
+	&__item-efficiency
+		font-weight: 600
+		+nlt
+			margin-bottom: 12px
+		+rm(480)
+			+nlt
+				margin-bottom: 15px
+		+rm(640)
+			+nlt
+				margin-bottom: 0
+				margin-right: 15px
+		+rm(768)
+			+nlt
+				margin-bottom: 15px
+				margin-right: 0
+		+rm(1024)
+			width: calc(100%/3)
+			+nlt
+				margin-bottom: 0
+				margin-right: 25px
+		+rm(1220)
+			&:nth-of-type(1)
+				width: 188px
+			&:nth-of-type(2)
+				width: 175px
+			&:last-of-type
+				width: 210px
+		+rm(1330)
+			+nlt
+				margin-bottom: 0
+				margin-right: 25px
+	&__bottom
+		background: linear-gradient(180deg, #F7FEED 0%, #E4F2FE 100%)
+		border-radius: 20px 20px 0px 20px
+		padding: 15px
+		padding-bottom: 50px
+		margin-bottom: 28px
+		position: relative
+		+rm(480)
+			padding: 20px 20px 60px
+		+rm(768)
+			padding: 30px 30px 70px
+			display: flex
+			align-items: center
+			justify-content: space-between
+		+rm(1024)
+			padding: 40px 50px 60px
+		+rm(1330)
+			padding: 63px 71px 70px
+	&__right
+		display: none
+	&__subtitle
+		text-align: center
+		text-transform: uppercase
+		font-weight: 600
+		margin-bottom: 15px
+		font-size: 22px
+		line-height: 1.2
+		color: #111111
+		+rm(480)
+			font-size: 24px
+		+rm(640)
+			font-size: 26px
+			margin-bottom: 20px
+		+rm(768)
+			text-align: left
+			font-size: 28px
+		+rm(1024)
+			font-size: 30px
+		+rm(1330)
+			font-size: 35px
+			margin-bottom: 27px
+	&__content
+		margin-bottom: 15px
+		+rm(480)
+			margin-bottom: 20px
+		+rm(768)
+			width: 63%
+		+rm(1024)
+			margin-bottom: 30px
+		+rm(1330)
+			width: 74%
+			margin-bottom: 42px
+	&__content-text
+		span
+			font-weight: 700
+		+nlt
+			margin-bottom: 10px
+		+rm(1024)
+			line-height: 26px
+			+nlt
+				margin-bottom: 15px
+		+rm(1330)
+			+nlt
+				margin-bottom: 20px
+	&__item
+		&::after
+			top: 50%
+			transform: translateY(-50%)
+		+nlt
+			margin-bottom: 12px
+		+rm(768)
+			+nlt
+				margin-bottom: 0
+				margin-right: 15px
+		+rm(1024)
+			width: 210px
+			+nlt
+				margin-right: 20px
+			&::after
+				top: 0
+				transform: none
+		+rm(1330)
+			&:nth-of-type(1)
+				width: 240px
+				margin-right: 64px
+			&:nth-of-type(2)
+				width: 190px
+				margin-right: 30px
+			&:nth-of-type(3)
+				width: 202px
+	&__list
+		+rm(768)
+			display: flex
+			align-items: flex-start
+			justify-content: flex-start
+
+	&__bottom-right
+		display: none
+		+rm(640)
+			background: #FFFFFF
+			box-shadow: 0px 4px 15px rgba(38, 8, 55, 0.1)
+			display: flex
+			align-items: center
+			justify-content: center
+			border-radius: 50%
+			width: 150px
+			height: 150px
+			position: absolute
+			bottom: 38px
+			right: 20px
+			font-weight: bold
+			font-size: 130px
+		+rm(768)
+			bottom: auto
+			top: 60px
+			right: 30px
+			width: 200px
+			height: 200px
+			font-size: 180px
+		+rm(1024)
+			right: 50px
+			width: 230px
+			height: 230px
+			font-size: 200px
+		+rm(1220)
+			right: 50px
+			width: 270px
+			height: 270px
+			font-size: 240px
+			top: 50px
+		+rm(1330)
+			right: 80px
+			width: 290px
+			height: 290px
+			font-size: 270px
+	&__btn
+		position: absolute
+		max-width: 270px
+		left: 50%
+		bottom: 0
+		transform: translate(-50%, 50%)
+		+rm(480)
+			max-width: 330px
+
+
+.list-efficiency
+	+rm(640)
+		display: flex
+		align-items: flex-start
+		justify-content: space-between
+	+rm(768)
+		display: block
+	+rm(1024)
+		display: flex
+		align-items: flex-start
+	&__text
+		position: relative
+		padding-left: 35px
+		color: #333333
+		span
+			font-weight: 700
+		&::after
+			content: ''
+			display: block
+			position: absolute
+			top: 2px
+			left: 0
+			width: 25px
+			height: 25px
+			background: url('../img/svg/check-blue.svg') no-repeat center
+			background-size: 100%
+		+rm(640)
+			padding-left: 0
+			padding-top: 40px
+			&::after
+				top: 0
+				left: 0
+				width: 30px
+				height: 30px
+		+rm(768)
+			padding-left: 40px
+			padding-top: 0
+		+rm(1024)
+			padding-left: 0
+			padding-top: 40px
+		+rm(1024)
+			padding-top: 60px
+			&::after
+				top: 0
+				left: 0
+				width: 41px
+				height: 41px
+		+rm(1330)
+			padding-left: 0
+			padding-top: 75px

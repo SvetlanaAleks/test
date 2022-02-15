@@ -1,0 +1,193 @@
++rm(768)
+	.no-webp .header
+		background: url('../img/svg/ellipse.svg') no-repeat, url('../img/header_bg.png') no-repeat, linear-gradient(180deg, #F7FEED 0%, #E4F2FE 100%)
+	.webp .header
+		background: url('../img/svg/ellipse.svg') no-repeat, url('../img/header_bg.webp') no-repeat, linear-gradient(180deg, #F7FEED 0%, #E4F2FE 100%)
+	.no-webp .header, .webp .header
+		background-size:  auto,1110px,auto
+		background-position: calc(50% - 360px) 630px,calc(50% - -309px) top,center
++rm(1024)
+	.no-webp .header, .webp .header
+		background-size: auto,1000px,auto
+		background-position: calc(50% - 490px) 560px,calc(50% - -290px) top,center
+	.no-webp .header--last, .webp .header--last
+		background-position: calc(50% - 490px) 490px,calc(50% - -290px) top,center
++rm(1220)
+		.no-webp .header, .webp .header
+			background-position: calc(50% - 580px) 560px,calc(50% - -300px) top,center
++rm(1330)
+	.no-webp .header, .webp .header
+		background-size: auto, 1410px, auto
+		background-position: calc(50% - 650px) 671px,calc(50% - -321px) -112px,center
+	.no-webp .header--last, .webp .header--last
+		background-position: calc(50% - 650px) 621px,calc(50% - -321px) -112px,center
+	
+	
+.header
+	position: relative
+	padding-bottom: 30px
+	padding-top: 90px
+	background: linear-gradient(180deg, #F7FEED 0%, #E4F2FE 100%)
+	&--last
+		padding: 30px 0
+	+rm(640)
+		padding-bottom: 260px
+		&--last
+			padding-top: 40px
+			padding-bottom: 260px
+	+rm(768)
+		padding-top: 110px
+		padding-bottom: 180px
+		&--last
+			padding-top: 50px
+	+rm(1024)
+		padding-top: 130px
+		padding-bottom: 120px
+		&--last
+			padding-top: 60px
+	+rm(1330)
+		padding-top: 172px
+		padding-bottom: 147px
+		&--last
+			padding-top: 120px
+	&__wrapper
+		margin-bottom: 20px
+		+rm(640)
+			margin-bottom: 30px
+		+rm(768)
+			margin-bottom: 0
+		+rm(1220)
+			padding-left: 40px
+		+rm(1330)
+			padding-left: 70px
+	&__title
+		text-align: center
+		font-size: 22px
+		line-height: 1.2
+		margin-bottom: 15px
+		span
+			letter-spacing: 0.02em
+			text-transform: uppercase
+			color: #0E101D
+			font-weight: 600
+			font-size: 34px
+			display: block
+		+rm(480)
+			font-size: 24px
+			span
+				font-size: 40px
+		+rm(640)
+			span
+				font-size: 50px
+		+rm(768)
+			text-align: left
+			span
+				font-size: 60px
+		+rm(1024)
+			span
+				font-size: 64px
+				line-height: 80px
+		+rm(1330)
+			font-size: 26px
+			margin-bottom: 10px
+			span
+				font-size: 70px
+				line-height: 100px
+	&__label-wrap
+		text-align: center
+		margin-bottom: 15px
+		+rm(768)
+			text-align: left
+		+rm(1024)
+			margin-bottom: 25px
+		+rm(1330)
+			margin-bottom: 39px
+	&__label
+		background: #FFFFFF
+		border-radius: 10px 10px 0px 10px
+		display: inline-block
+		padding: 5px 15px
+		font-weight: 600
+		+rm(640)
+			padding: 7px 20px
+		+rm(1024)
+			padding: 10px 27px
+	&__text
+		font-weight: bold
+		color: $dark-grey
+		margin-bottom: 20px
+		+rm(640)
+			margin-bottom: 30px
+		+rm(768)
+			width: 50%
+		+rm(1330)
+			width: 45%
+			margin-bottom: 40px
+
+	&__list
+		+rm(768)
+			width: 54%
+		+rm(1220)
+			width: 44%
+		+rm(1330)
+			width: 40%
+	&__item
+		+nlt
+			margin-bottom: 12px
+		+rm(480)
+			+nlt
+				margin-bottom: 15px
+		+rm(1330)
+			+nlt
+				margin-bottom: 19px
+	&__form-banner
+		border-radius: 40px 40px 0px 40px
+		box-shadow: 0px 12px 44px #E7E7E7
+		background: #FFFFFF
+		padding: 15px
+		z-index: 1
+		+rm(480)
+			padding: 20px
+		+rm(640)
+			position: absolute
+			bottom: 0
+			left: 50%
+			transform: translate(-50%, 50%)
+			max-width: 500px
+			width: 100%
+		+rm(768)
+			max-width: 720px
+			bottom: -20px
+		+rm(1024)
+			max-width: 975px
+			bottom: -80px
+			padding: 30px 40px
+		+rm(1220)
+			max-width: 1170px
+			bottom: -30px
+			padding: 40px 50px
+		+rm(1330)
+			max-width: 1280px
+			padding: 40px 50px 30px
+
+.list-content
+	&__item
+		position: relative
+		padding-left: 35px
+		color: #333333
+		span
+			font-weight: 700
+		&::after
+			content: ''
+			display: block
+			position: absolute
+			top: 2px
+			left: 0
+			width: 25px
+			height: 25px
+			background: url('../img/svg/check-blue.svg') no-repeat center
+			background-size: 100%
+		+rm(480)
+			padding-left: 40px
+		+rm(1330)
+			padding-left: 45px

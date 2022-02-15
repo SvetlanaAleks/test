@@ -1,0 +1,369 @@
+.authors
+	padding: 30px 0
+	+rm(640)
+		padding: 40px 0
+	+rm(768)
+		padding: 50px 0
+	+rm(1024)
+		padding: 60px 0
+		background: url('../img/svg/ellipse.svg') no-repeat
+		background-position: calc(50% - 470px) 180px
+		position: relative
+	+rm(1220)
+		background-position: calc(50% - 570px) 190px
+	+rm(1330)
+		padding-top: 131px
+		padding-bottom: 110px
+		background-position: calc(50% - 630px) 330px
+	&__circle
+		display: none
+		+rm(1024)
+			pointer-events: none
+			display: block
+			position: absolute
+			border-radius: 50%
+			filter: blur(80px)
+			&--blue
+				top: 230px
+				right: calc(50% - 1050px)
+				width: 296px
+				height: 296px
+				background: linear-gradient(96.95deg, #3DA1DA -15.73%, #366CBD 44.6%, #3DACD0 106.25%)
+				opacity: 0.3
+			&--green
+				top: 700px
+				left: calc(50% - 1080px)
+				width: 402px
+				height: 402px
+				background: #F6FEEE
+		+rm(1330)
+			&--blue
+				top: 230px
+				right: calc(50% - 1050px)
+			&--green
+				top: 700px
+				left: calc(50% - 1080px)
+	&__title
+		text-align: center
+		margin-bottom: 20px
+		+rm(768)
+			margin-bottom: 30px
+		+rm(1330)
+			margin-bottom: 47px
+	&__slider
+		margin-bottom: 20px
+		padding-bottom: 20px
+		border-bottom: 1px solid #D7D7D7
+		+rm(480)
+			padding-bottom: 30px
+			margin-bottom: 30px
+		+rm(640)
+			width: 80%
+			margin: auto
+			padding-bottom: 40px
+			margin-bottom: 40px
+		+rm(768)
+			width: 100%
+		+rm(1024)
+			padding-bottom: 50px
+			margin-bottom: 50px
+		+rm(1330)
+			padding-bottom: 0
+			border: none
+			margin-bottom: 89px
+	&__slide
+		margin-bottom: 15px
+		+rm(480)
+			margin-bottom: 20px
+		+rm(768)
+			margin-bottom: 30px
+	&__dots
+		li
+			+nlt
+				margin-right: 12px
+	.slick-arrow
+		top: 250px
+		&.prev
+			left: -40px
+		&.next
+			right: -40px
+		+rm(768)
+			top: auto
+			bottom: 35px
+			&.prev
+				left: 0
+			&.next
+				right: 0
+		+rm(1220)
+			bottom: 45px
+		+rm(1330)
+			bottom: -5px
+		+rm(1660)
+			top: 240px
+			bottom: auto
+			&.prev
+				left: -180px
+			&.next
+				right: -180px
+	.form-banner
+		+rm(1330)
+			&__desc
+				width: 94%
+			.form__btn
+				max-width: 275px
+			.form__input
+				max-width: 275px
+
+
+
+
+.author-slide
+	background: linear-gradient(180deg, #F7FEED 0%, #E4F2FE 100%)
+	border-radius: 20px 20px 0px 20px
+	text-align: center
+	&--main
+		padding: 15px 15px 0
+		.author-slide
+			&__title
+				margin-bottom: 10px
+			&__left
+				margin-bottom: 10px
+	&--person
+		padding: 15px
+		margin-top: 160px
+		display: flex !important
+		flex-direction: column-reverse
+		.author-slide
+			&__photo
+				margin-top: -170px
+				margin-bottom: 20px
+				border-bottom: 2px solid #40a2da
+				img
+					max-width: 240px
+	+rm(480)
+		&--person
+			padding: 20px
+		&--main
+			padding: 20px 20px 0
+			.author-slide
+				&__title
+					margin-bottom: 15px
+				&__left
+					margin-bottom: 20px
+	+rm(768)
+		&--main
+			padding: 30px 30px 0
+			.author-slide
+				&__photo
+					max-width: 470px
+					width: 100%
+					margin: auto
+		&--person
+			padding: 30px
+			text-align: left
+			margin-top: 30px
+			.author-slide
+				&__photo
+					margin-top: 0
+					margin-bottom: 0
+					border: none
+					position: absolute
+					bottom: 0
+					img
+						max-width: 100%
+				&__left
+					max-width: 340px
+					width: 100%
+		&--2
+			.author-slide
+				&__photo
+					max-width: 330px
+					right: 5px
+		&--3
+			.author-slide
+				&__photo
+					max-width: 320px
+					right: 10px
+		&--4
+			.author-slide
+				&__photo
+					max-width: 290px
+					right: 13px
+	+rm(1024)
+		&--main
+			padding: 40px
+			margin-top: 30px
+			.author-slide
+				&__photo
+					position: absolute
+					bottom: 0
+					right: 10px
+					max-width: 500px
+				&__left
+					margin-bottom: 0
+					max-width: 420px
+					width: 100%
+		&--person
+			padding: 40px
+			.author-slide
+				&__left
+					max-width: 530px
+		&--2
+			margin-top: 90px
+			.author-slide
+				&__photo
+					right: 25px
+		&--3
+			margin-top: 70px
+			.author-slide
+				&__photo
+					right: 30px
+		&--4
+			margin-top: 75px
+			.author-slide
+				&__photo
+					right: 40px
+	+rm(1220)
+		&--main
+			padding: 50px
+			margin-top: 60px
+			.author-slide
+				&__photo
+					max-width: 550px
+					right: 20px
+				&__left
+					max-width: 450px
+		&--person
+			padding: 50px
+			margin-top: 120px
+			.author-slide
+				&__left
+					max-width: 670px
+				&__text
+					padding: 15px 20px 15px 40px
+	+rm(1330)
+		&--person
+			padding: 60px 70px
+			.author-slide
+				&__title
+					margin-bottom: 29px
+				&__left
+					max-width: 770px
+		&--2
+			margin-top: 160px
+			.author-slide
+				&__photo
+					right: 20px
+					max-width: 400px
+		&--3
+			margin-top: 150px
+			.author-slide
+				&__photo
+					max-width: 400px
+					right: 20px
+		&--4
+			margin-top: 150px
+			.author-slide
+				&__photo
+					max-width: 370px
+					right: 20px
+		&--main
+			padding: 60px 70px
+			margin-top: 65px
+			.author-slide
+				&__title
+					margin-bottom: 37px
+				&__photo
+					max-width: 650px
+				&__left
+					max-width: 500px
+
+	&__left
+		color: #272727
+		+rm(1024)
+			text-align: left
+	&__title
+		font-size: 20px
+		line-height: 1.2
+		font-weight: bold
+		margin-bottom: 10px
+		+rm(1024)
+			font-size: 22px
+		+rm(1220)
+			font-size: 24px
+		+rm(1330)
+			font-size: 26px
+			line-height: 29px
+	&__post
+		font-style: italic
+		color: #444444
+		margin-bottom: 15px
+		font-size: 14px
+		line-height: 1.4
+		+rm(768)
+			margin-bottom: 25px
+		+rm(1330)
+			margin-bottom: 52px
+			width: 83%
+	&__photo
+		img
+			margin: auto
+	&__text
+		padding: 20px 0
+		position: relative
+		&::after, &::before
+			content: '“'
+			display: block
+			position: absolute
+			font-size: 70px
+			font-family: "Segoe UI", Helvetica, sans-serif
+			color: #366CBD
+			line-height: 0.7
+		&::after
+			right: -5px
+			bottom: 0
+			transform: rotate(180deg)
+		&::before
+			left: -5px
+			top: 0
+		+rm(480)
+			&::after, &::before
+				font-size: 80px
+		+rm(640)
+			padding: 30px 0
+			&::after, &::before
+				font-size: 90px
+		+rm(1330)
+			padding: 11px 12px 11px 49px
+			line-height: 150%
+	&__desc
+		+rm(1330)
+			line-height: 150%
+
+
+
+
+.slick-dots
+	position: static
+	li
+		width: 17px
+		height: 17px
+		border-radius: 50%
+		background: linear-gradient(96.95deg, #3DA1DA -15.73%, #366CBD 44.6%, #3DACD0 106.25%)
+		margin: 0
+		&::after
+			content: ''
+			display: block
+			position: absolute
+			top: 1px
+			bottom: 1px
+			left: 1px
+			right: 1px
+			border-radius: 50%
+			background: white
+			transition: all .3s
+		&.slick-active
+			&::after
+				opacity: 0
+		button
+			display: none

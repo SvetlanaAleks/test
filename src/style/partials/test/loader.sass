@@ -1,0 +1,111 @@
+.no-backgroundcliptext .loader__percent
+	color: #366CBD
+
+.backgroundcliptext .loader__percent
+	background: linear-gradient(96.95deg, #3DA1DA -15.73%, #366CBD 44.6%, #3DACD0 106.25%)
+	-webkit-background-clip: text
+	-webkit-text-fill-color: transparent
+	
+@keyframes animate
+	0%
+		stroke-dashoffset: 990
+	100%
+		stroke-dashoffset: 0
+
+
+.animate
+	stroke-dasharray: 990px
+	stroke: url('#paint0_linear_484_262')
+	animation: animate 4s linear normal
+
+
+
+.loader
+	display: none
+	&.active
+		display: flex
+	&__wrap
+		text-align: center
+	&__block
+		width: 250px
+		height: 250px
+		margin: auto
+		border-radius: 50%
+		margin-bottom: 15px
+		display: flex
+		align-items: center
+		justify-content: center
+		position: relative
+		background-color: white
+		&::after, &::before
+			content: ''
+			display: block
+			position: absolute
+			border-radius: 50%
+			border: 1.29455px dashed #B8B8B8
+			opacity: .5
+		&::after
+			top: -20px
+			bottom: -20px
+			left: -20px
+			right: -20px
+		&::before
+			top: -60px
+			bottom: -60px
+			left: -60px
+			right: -60px
+		svg
+			position: absolute
+			width: 85%
+			height: 85%
+			box-shadow: 0px 5.1782px 5.1782px rgba(0, 0, 0, 0.25)
+			border-radius: 50%
+		+rm(480)
+			width: 350px
+			height: 350px
+			&::after
+				top: -40px
+				bottom: -40px
+				left: -40px
+				right: -40px
+			&::before
+				top: -100px
+				bottom: -100px
+				left: -100px
+				right: -100px
+		+rm(768)
+			width: 450px
+			height: 450px
+			margin-bottom: 20px
+			&::after
+				top: -60px
+				bottom: -60px
+				left: -60px
+				right: -60px
+			&::before
+				top: -170px
+				bottom: -170px
+				left: -170px
+				right: -170px
+		+rm(1024)
+			width: 500px
+			height: 500px
+			margin-bottom: 30px
+		+rm(1220)
+			width: 542px
+			height: 542px
+			margin-bottom: 45px
+	&__percent
+		font-weight: 900
+		font-size: 60px
+		+rm(480)
+			font-size: 70px
+		+rm(768)
+			font-size: 80px
+		+rm(1220)
+			font-size: 103px
+	&__text
+		font-weight: bold
+		font-size: 22px
+		line-height: 130%
+		color: #5F5F5F
