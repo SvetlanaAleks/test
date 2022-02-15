@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="stylesheet" href="/css/main.css"/>
+    <title>Онлайн программа по Психосоматике: «Шифр к телу»</title>
+    <script>
+      !function(e,n,A){function o(e,n){return typeof e===n}function t(){var e,n,A,t,a,i,l;for(var f in r)if(r.hasOwnProperty(f)){if(e=[],n=r[f],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(A=0;A<n.options.aliases.length;A++)e.push(n.options.aliases[A].toLowerCase());for(t=o(n.fn,"function")?n.fn():n.fn,a=0;a<e.length;a++)i=e[a],l=i.split("."),1===l.length?Modernizr[l[0]]=t:(!Modernizr[l[0]]||Modernizr[l[0]]instanceof Boolean||(Modernizr[l[0]]=new Boolean(Modernizr[l[0]])),Modernizr[l[0]][l[1]]=t),s.push((t?"":"no-")+l.join("-"))}}function a(e){var n=u.className,A=Modernizr._config.classPrefix||"";if(c&&(n=n.baseVal),Modernizr._config.enableJSClass){var o=new RegExp("(^|\\s)"+A+"no-js(\\s|$)");n=n.replace(o,"$1"+A+"js$2")}Modernizr._config.enableClasses&&(n+=" "+A+e.join(" "+A),c?u.className.baseVal=n:u.className=n)}function i(e,n){if("object"==typeof e)for(var A in e)f(e,A)&&i(A,e[A]);else{e=e.toLowerCase();var o=e.split("."),t=Modernizr[o[0]];if(2==o.length&&(t=t[o[1]]),"undefined"!=typeof t)return Modernizr;n="function"==typeof n?n():n,1==o.length?Modernizr[o[0]]=n:(!Modernizr[o[0]]||Modernizr[o[0]]instanceof Boolean||(Modernizr[o[0]]=new Boolean(Modernizr[o[0]])),Modernizr[o[0]][o[1]]=n),a([(n&&0!=n?"":"no-")+o.join("-")]),Modernizr._trigger(e,n)}return Modernizr}var s=[],r=[],l={_version:"3.6.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var A=this;setTimeout(function(){n(A[e])},0)},addTest:function(e,n,A){r.push({name:e,fn:n,options:A})},addAsyncTest:function(e){r.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=l,Modernizr=new Modernizr;var f,u=n.documentElement,c="svg"===u.nodeName.toLowerCase();!function(){var e={}.hasOwnProperty;f=o(e,"undefined")||o(e.call,"undefined")?function(e,n){return n in e&&o(e.constructor.prototype[n],"undefined")}:function(n,A){return e.call(n,A)}}(),l._l={},l.on=function(e,n){this._l[e]||(this._l[e]=[]),this._l[e].push(n),Modernizr.hasOwnProperty(e)&&setTimeout(function(){Modernizr._trigger(e,Modernizr[e])},0)},l._trigger=function(e,n){if(this._l[e]){var A=this._l[e];setTimeout(function(){var e,o;for(e=0;e<A.length;e++)(o=A[e])(n)},0),delete this._l[e]}},Modernizr._q.push(function(){l.addTest=i}),Modernizr.addAsyncTest(function(){function e(e,n,A){function o(n){var o=n&&"load"===n.type?1==t.width:!1,a="webp"===e;i(e,a&&o?new Boolean(o):o),A&&A(n)}var t=new Image;t.onerror=o,t.onload=o,t.src=n}var n=[{uri:"data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=",name:"webp"},{uri:"data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==",name:"webp.alpha"},{uri:"data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA",name:"webp.animation"},{uri:"data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=",name:"webp.lossless"}],A=n.shift();e(A.name,A.uri,function(A){if(A&&"load"===A.type)for(var o=0;o<n.length;o++)e(n[o].name,n[o].uri)})}),t(),a(s),delete l.addTest,delete l.addAsyncTest;for(var p=0;p<Modernizr._q.length;p++)Modernizr._q[p]();e.Modernizr=Modernizr}(window,document);
+      !function(e,n,t){function r(e){var n=_.className,t=Modernizr._config.classPrefix||"";if(x&&(n=n.baseVal),Modernizr._config.enableJSClass){var r=new RegExp("(^|\\s)"+t+"no-js(\\s|$)");n=n.replace(r,"$1"+t+"js$2")}Modernizr._config.enableClasses&&(n+=" "+t+e.join(" "+t),x?_.className.baseVal=n:_.className=n)}function o(e,n){return typeof e===n}function s(){var e,n,t,r,s,i,l;for(var a in S)if(S.hasOwnProperty(a)){if(e=[],n=S[a],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(t=0;t<n.options.aliases.length;t++)e.push(n.options.aliases[t].toLowerCase());for(r=o(n.fn,"function")?n.fn():n.fn,s=0;s<e.length;s++)i=e[s],l=i.split("."),1===l.length?Modernizr[l[0]]=r:(!Modernizr[l[0]]||Modernizr[l[0]]instanceof Boolean||(Modernizr[l[0]]=new Boolean(Modernizr[l[0]])),Modernizr[l[0]][l[1]]=r),C.push((r?"":"no-")+l.join("-"))}}function i(e,n){return!!~(""+e).indexOf(n)}function l(){return"function"!=typeof n.createElement?n.createElement(arguments[0]):x?n.createElementNS.call(n,"http://www.w3.org/2000/svg",arguments[0]):n.createElement.apply(n,arguments)}function a(e){return e.replace(/([a-z])-([a-z])/g,function(e,n,t){return n+t.toUpperCase()}).replace(/^-/,"")}function u(e,n){return function(){return e.apply(n,arguments)}}function f(e,n,t){var r;for(var s in e)if(e[s]in n)return t===!1?e[s]:(r=n[e[s]],o(r,"function")?u(r,t||n):r);return!1}function c(n,t,r){var o;if("getComputedStyle"in e){o=getComputedStyle.call(e,n,t);var s=e.console;if(null!==o)r&&(o=o.getPropertyValue(r));else if(s){var i=s.error?"error":"log";s[i].call(s,"getComputedStyle returning null, its possible modernizr test results are inaccurate")}}else o=!t&&n.currentStyle&&n.currentStyle[r];return o}function d(e){return e.replace(/([A-Z])/g,function(e,n){return"-"+n.toLowerCase()}).replace(/^ms-/,"-ms-")}function p(){var e=n.body;return e||(e=l(x?"svg":"body"),e.fake=!0),e}function m(e,t,r,o){var s,i,a,u,f="modernizr",c=l("div"),d=p();if(parseInt(r,10))for(;r--;)a=l("div"),a.id=o?o[r]:f+(r+1),c.appendChild(a);return s=l("style"),s.type="text/css",s.id="s"+f,(d.fake?d:c).appendChild(s),d.appendChild(c),s.styleSheet?s.styleSheet.cssText=e:s.appendChild(n.createTextNode(e)),c.id=f,d.fake&&(d.style.background="",d.style.overflow="hidden",u=_.style.overflow,_.style.overflow="hidden",_.appendChild(d)),i=t(c,e),d.fake?(d.parentNode.removeChild(d),_.style.overflow=u,_.offsetHeight):c.parentNode.removeChild(c),!!i}function y(n,r){var o=n.length;if("CSS"in e&&"supports"in e.CSS){for(;o--;)if(e.CSS.supports(d(n[o]),r))return!0;return!1}if("CSSSupportsRule"in e){for(var s=[];o--;)s.push("("+d(n[o])+":"+r+")");return s=s.join(" or "),m("@supports ("+s+") { #modernizr { position: absolute; } }",function(e){return"absolute"==c(e,null,"position")})}return t}function g(e,n,r,s){function u(){c&&(delete N.style,delete N.modElem)}if(s=o(s,"undefined")?!1:s,!o(r,"undefined")){var f=y(e,r);if(!o(f,"undefined"))return f}for(var c,d,p,m,g,v=["modernizr","tspan","samp"];!N.style&&v.length;)c=!0,N.modElem=l(v.shift()),N.style=N.modElem.style;for(p=e.length,d=0;p>d;d++)if(m=e[d],g=N.style[m],i(m,"-")&&(m=a(m)),N.style[m]!==t){if(s||o(r,"undefined"))return u(),"pfx"==n?m:!0;try{N.style[m]=r}catch(h){}if(N.style[m]!=g)return u(),"pfx"==n?m:!0}return u(),!1}function v(e,n,t,r,s){var i=e.charAt(0).toUpperCase()+e.slice(1),l=(e+" "+P.join(i+" ")+i).split(" ");return o(n,"string")||o(n,"undefined")?g(l,n,r,s):(l=(e+" "+z.join(i+" ")+i).split(" "),f(l,n,t))}function h(e,n,r){return v(e,t,t,n,r)}var C=[],S=[],w={_version:"3.6.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var t=this;setTimeout(function(){n(t[e])},0)},addTest:function(e,n,t){S.push({name:e,fn:n,options:t})},addAsyncTest:function(e){S.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=w,Modernizr=new Modernizr;var _=n.documentElement,x="svg"===_.nodeName.toLowerCase(),b="Moz O ms Webkit",P=w._config.usePrefixes?b.split(" "):[];w._cssomPrefixes=P;var z=w._config.usePrefixes?b.toLowerCase().split(" "):[];w._domPrefixes=z;var E={elem:l("modernizr")};Modernizr._q.push(function(){delete E.elem});var N={style:E.elem.style};Modernizr._q.unshift(function(){delete N.style}),w.testAllProps=v,w.testAllProps=h,Modernizr.addTest("backgroundcliptext",function(){return h("backgroundClip","text")}),s(),r(C),delete w.addTest,delete w.addAsyncTest;for(var k=0;k<Modernizr._q.length;k++)Modernizr._q[k]();e.Modernizr=Modernizr}(window,document);
+      
+    </script>
+  </head>
+  <body class="ever-timer">
+    <div class="menu">
+      <div class="container">
+        <div class="menu__wrapper">
+          <ul class="menu__links nav">
+            <li class="nav__item menu__item"><a class="nav__link js-scroll" href="#information">Что такое маркетплейс</a></li>
+            <li class="nav__item menu__item"><a class="nav__link js-scroll" href="#composition">Про обучение</a></li>
+            <li class="nav__item menu__item"><a class="nav__link js-scroll" href="#order">Как заказать</a></li>
+            <li class="nav__item menu__item"><a class="nav__link js-scroll" href="#questions">Для кого</a></li>
+            <li class="nav__item menu__item"><a class="nav__link js-scroll" href="#reviews">Отзывы</a></li>
+          </ul>
+          <button class="menu__btn btn-light js-scroll" data-target="#order">Записаться на программу</button>
+          <div class="menu__burger burger js-burger" data-target="#js-mobile-menu"><span class="burger__line"></span><span class="burger__line"></span><span class="burger__line"></span></div>
+        </div>
+      </div>
+    </div>
+    <div class="menu-mobile" id="js-mobile-menu">
+      <div class="menu-mobile__wrap">
+        <div class="menu-mobile__top">
+          <p class="menu-mobile__logo">«Шифр к телу»</p>
+          <div class="burger js-burger" data-target="#js-mobile-menu"><span class="burger__line"></span><span class="burger__line"></span><span class="burger__line"></span></div>
+        </div>
+        <ul class="menu-mobile__nav-list nav-list">
+          <li class="nav-list__item"><a class="nav-list__link js-scroll" href="#information">Что такое маркетплейс</a></li>
+          <li class="nav-list__item"><a class="nav-list__link js-scroll" href="#composition">Про обучение</a></li>
+          <li class="nav-list__item"><a class="nav-list__link js-scroll" href="#order">Как заказать</a></li>
+          <li class="nav-list__item"><a class="nav-list__link js-scroll" href="#questions">Для кого</a></li>
+          <li class="nav-list__item"><a class="nav-list__link js-scroll" href="#reviews">Отзывы</a></li>
+        </ul>
+        <div class="menu-mobile__bottom">
+          <button class="menu-mobile__btn btn">Записаться на курс</button>
+        </div>
+      </div>
+    </div>
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <h1 class="header__title">Онлайн программа по&nbsp;Психосоматике:<span>«Шифр к телу»</span></h1>
+          <div class="header__label-wrap">
+            <p class="header__label text-s">Расшифруй свою болезнь!</p>
+          </div>
+          <p class="header__text text-s">Программа включает 10 основных уроков, домашнее задание к каждому из уроков и аудио практики:</p>
+          <ul class="header__list list-content text-s">
+            <li class="list-content__item header__item"><span>Как победить: </span>гипертонию, язвенную болезнь, артрит, мигрень и&nbsp;многое другое</li>
+            <li class="list-content__item header__item"><span>Расшифруете, </span>по каким моделям классифицируют психосоматические расстройства</li>
+            <li class="list-content__item header__item"><span>Разберетесь </span>в личных проблемах и научитесь поддерживать близких и&nbsp;ваших деток</li>
+          </ul>
+        </div>
+        <div class="header__form-banner">
+          <div class="form-banner">
+            <div class="form-banner__top">
+              <div class="form-banner__top-left">
+                <h4 class="form-banner__title">Запишись на программу из 10&nbsp;уроков и аудио практик сегодня</h4>
+                <p class="form-banner__desc text-s">пока еще действует спец цена и получи <span>2 бонусных урока </span>«Деньги. Используй кризис. Работай в удовольствие» и «Отношения: Я, партнер, родители»</p>
+              </div>
+              <div class="form-banner__timer">
+                <div class="timer-block">
+                  <p class="timer-block__text">До конца акции осталось:</p>
+                  <div class="timer-block__wrap">
+                    <div class="timer-block__num hours">00</div>
+                    <p class="timer-block__dots">:</p>
+                    <div class="timer-block__num minutes">00</div>
+                    <p class="timer-block__dots">:</p>
+                    <div class="timer-block__num seconds">00</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-banner__bottom">
+              <div class="form-banner__price">
+                <p class="form-banner__price-item active js-price" data-type="1">29₽</p>
+                <p class="form-banner__price-item js-price" data-type="2">89₽</p>
+                <p class="form-banner__price-item js-price" data-type="3">390₽</p>
+                <p class="form-banner__price-item js-price" data-type="4">890₽</p>
+              </div>
+              <form class="form-banner__form form" action="/" method="post"> 
+                <input class="form__input" type="text" name="name" placeholder="Ваше имя"/>
+                <input class="form__input" type="email" name="email" placeholder="Ваш E-mail"/>
+                <button class="form__btn btn">Записаться<img src="/img/svg/arrow_btn.svg" alt="arrow"/></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="information" id="information">
+      <div class="information__circle information__circle--blue"></div>
+      <div class="information__circle information__circle--green"></div>
+      <div class="container">
+        <h2 class="information__title title">Что такое психосоматика и&nbsp;почему это эффективно?</h2>
+        <div class="information__top">
+          <div class="information__photo">
+            <picture>
+              <source type="image/webp" media="(min-width:768px)" srcset="/img/person.webp"/>
+              <source media="(min-width:768px)" srcset="img/person.jpg"/>
+              <source srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/5+hHgAHggJ/PchI7wAAAABJRU5ErkJggg=="/><img alt="image" src="img/person.jpg"/>
+            </picture>
+          </div>
+          <div class="information__desc-wrap">
+            <div class="information__desc">
+              <p class="information__text">Наука известна с древних времен - о ней рассуждают Гиппократ, Аристотель и Платон.</p>
+              <p class="information__text information__text--bold">Среди известных приверженцев психосоматических теорий - Павлов, Фрейд, Луиза Хей, Франц Александер и многие другие.</p>
+            </div>
+            <ul class="information__list list-efficiency text-s">
+              <li class="list-efficiency__text information__item-efficiency">Нет ни одной болезни, которая была бы на 100% только телесная.</li>
+              <li class="list-efficiency__text information__item-efficiency">Положительные установки и лечение через мысли - работает.</li>
+              <li class="list-efficiency__text information__item-efficiency">Болезненные симптомы можно устранить психологической перенастройкой</li>
+            </ul>
+          </div>
+        </div>
+        <div class="information__bottom">
+          <div class="information__bottom-left">
+            <h3 class="information__subtitle">Курс поможет вам узнать:</h3>
+            <div class="information__content">
+              <p class="information__content-text text-s"><span>Программа «Шифр к телу»</span> - это система онлайн-уроков, которая состоит из <span>10 лекций и 10 практических домашних заданий,</span> которые не только расскажут вам теорию, а так же сразу заставят действовать и двигаться в сторону здоровья.</p>
+              <p class="information__content-text text-s">И более <span>10 аудио практик,</span> при помощи которых мы с вами все преодолеем.</p>
+            </div>
+            <ul class="information__list list-content text-s">
+              <li class="list-content__item information__item"><span>Как работать с&nbsp;телом</span></li>
+              <li class="list-content__item information__item"><span>Что делать с&nbsp;эмоциями</span></li>
+              <li class="list-content__item information__item"><span>Как убрать блоки и&nbsp;зажимы</span></li>
+            </ul>
+          </div>
+          <div class="information__bottom-right"><span>?</span></div>
+          <button class="information__btn btn js-scroll" data-target="#order">Записаться на курс</button>
+        </div>
+      </div>
+    </section>
+    <section class="questions" id="questions">
+      <div class="container">
+        <h2 class="questions__title title">Какие из этих пунктов о вас?</h2>
+        <div class="questions__list">
+          <div class="questions__item question">
+            <h4 class="question__title text-s">Вы давно хотели узнать, что такое психосоматика?</h4>
+            <p class="question__text">После наших уроков вы будете понимать причины возникновения тех или иных болезней</p>
+          </div>
+          <div class="questions__item question">
+            <h4 class="question__title text-s">У вас есть проблемы со здоровьем?</h4>
+            <p class="question__text">Уроки помогут вам составить схему, по которой вы сможете ориентироваться - какие мысли и каким образом затрагивают ваши органы</p>
+          </div>
+          <div class="questions__item question">
+            <h4 class="question__title text-s">Вы хотите, чтобы ваши близкие были здоровы?</h4>
+            <p class="question__text">Вы сможете им помочь, зная, как изменить мыслительные привычки и убеждения.</p>
+          </div>
+          <div class="questions__item question">
+            <h4 class="question__title text-s">У моей семьи наследственные болезни, и я хочу понимать, почему?</h4>
+            <p class="question__text">Для этого мы предлагаем уроки проработки родовых программ.</p>
+          </div>
+          <div class="questions__item question">
+            <h4 class="question__title text-s">Я тревожусь по поводу будущего (прошлого)</h4>
+            <p class="question__text">Психосоматика работает с тревожными и стрессовыми состояниями</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="authors">
+      <div class="authors__circle authors__circle--blue"></div>
+      <div class="authors__circle authors__circle--green"></div>
+      <div class="container">
+        <h2 class="authors__title title">Авторы курса и уникальной методики по перенастройке мышления</h2>
+        <div class="authors__slider js-authors-slider">
+          <div class="authors__slide author-slide author-slide--main">
+            <div class="author-slide__left">
+              <h5 class="author-slide__title">Дипломированные врачи высшей категории и психотерапевты. </h5>
+              <p class="author-slide__desc text-s">Мы создавали эту авторскую методику несколько лет и уже выпустили множество учеников, которые смогли изменить свою жизнь и избавиться от психосоматических заболеваний навсегда! Они помогли себе и своим близким при помощи главного - знаний, как работает наше тело и наша психика.</p>
+            </div>
+            <div class="author-slide__photo">
+              <picture>
+                <source type="image/webp" media="(min-width:480px)" srcset="/img/authors.png"/>
+                <source media="(min-width:480px)" srcset="/img/authors.png"/>
+                <source type="image/webp" media="(min-width:300px)" srcset="/img/authors_mob.webp"/>
+                <source media="(min-width:300px)" srcset="/img/authors_mob.png"/><img src="/img/authors.png" alt="picture"/>
+              </picture>
+            </div>
+          </div>
+          <div class="authors__slide author-slide author-slide--2 author-slide--person">
+            <div class="author-slide__left">
+              <h5 class="author-slide__title">Олег Войткович</h5>
+              <p class="author-slide__post">53 года, дипломированный психолог, тренер по программе оздоравливающего мышления, основатель Академии «Психосоматика - путь к здоровью». Создатель курса по психосоматике</p>
+              <p class="author-slide__text text-s">Мы создавали эту авторскую методику несколько лет и уже выпустили множество учеников, которые смогли изменить свою жизнь и избавиться от психосоматических заболеваний навсегда! Они помогли себе и своим близким при помощи главного - знаний, как работает наше тело и наша психика</p>
+            </div>
+            <div class="author-slide__photo">
+              <picture>
+                <source type="image/webp" media="(min-width:480px)" srcset="/img/author_1.png"/>
+                <source media="(min-width:480px)" srcset="/img/author_1.png"/>
+                <source type="image/webp" media="(min-width:300px)" srcset="/img/author_1_mob.webp"/>
+                <source media="(min-width:300px)" srcset="/img/author_1_mob.png"/><img src="/img/author_1.png" alt="picture"/>
+              </picture>
+            </div>
+          </div>
+          <div class="authors__slide author-slide author-slide--3 author-slide--person">
+            <div class="author-slide__left">
+              <h5 class="author-slide__title">Полина Сенчева</h5>
+              <p class="author-slide__post">44 года, физиолог-реабилитолог, выпускник Университета гештальт-терапии, 10 лет стажа в психотерапии. Изучала связь реабилитации после травм и операций и мышления.</p>
+              <p class="author-slide__text text-s">Я точно знаю, что мышечные зажимы, боль в спине, плечах и голове - это психосоматика. Болезни легких, часто даже аллергия и астма - тоже психосоматика. Бесполезно сдавать анализы и пить неработающие таблетки, пока вы не найдете причину в своей голове. И мы знаем, как ее найти!</p>
+            </div>
+            <div class="author-slide__photo">
+              <picture>
+                <source type="image/webp" media="(min-width:480px)" srcset="/img/author_2.png"/>
+                <source media="(min-width:480px)" srcset="/img/author_2.png"/>
+                <source type="image/webp" media="(min-width:300px)" srcset="/img/author_2_mob.webp"/>
+                <source media="(min-width:300px)" srcset="/img/author_2_mob.png"/><img src="/img/author_2.png" alt="picture"/>
+              </picture>
+            </div>
+          </div>
+          <div class="authors__slide author-slide author-slide--4 author-slide--person">
+            <div class="author-slide__left">
+              <h5 class="author-slide__title">Артем Аверинцев</h5>
+              <p class="author-slide__post">кардиолог-ревматолог, психотерапевт, 38 лет практики, изучал связь кардиопатических состояний с психологическими факторами.</p>
+              <p class="author-slide__text text-s">Уверен - большинство болезней сердечно-сосудистой системы возникают из-за нашего образа мыслей и образа жизни. Для них нужно не пить лекарства, а менять себя. Это возможно и это работает.</p>
+            </div>
+            <div class="author-slide__photo">
+              <picture>
+                <source type="image/webp" media="(min-width:480px)" srcset="/img/author_3.png"/>
+                <source media="(min-width:480px)" srcset="/img/author_3.png"/>
+                <source type="image/webp" media="(min-width:300px)" srcset="/img/author_3_mob.webp"/>
+                <source media="(min-width:300px)" srcset="/img/author_3_mob.png"/><img src="/img/author_3.png" alt="picture"/>
+              </picture>
+            </div>
+          </div>
+        </div>
+        <div class="authors__form" id="order">
+          <div class="form-banner">
+            <div class="form-banner__top">
+              <div class="form-banner__top-left">
+                <h4 class="form-banner__title">Запишись на программу из 10&nbsp;уроков и аудио практик сегодня</h4>
+                <p class="form-banner__desc text-s">пока еще действует спец цена и получи <span>2 бонусных урока </span>«Деньги. Используй кризис. Работай в удовольствие» и «Отношения: Я, партнер, родители»</p>
+              </div>
+              <div class="form-banner__timer">
+                <div class="timer-block">
+                  <p class="timer-block__text">До конца акции осталось:</p>
+                  <div class="timer-block__wrap">
+                    <div class="timer-block__num hours">00</div>
+                    <p class="timer-block__dots">:</p>
+                    <div class="timer-block__num minutes">00</div>
+                    <p class="timer-block__dots">:</p>
+                    <div class="timer-block__num seconds">00</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-banner__bottom">
+              <div class="form-banner__price">
+                <p class="form-banner__price-item active js-price" data-type="1">29₽</p>
+                <p class="form-banner__price-item js-price" data-type="2">89₽</p>
+                <p class="form-banner__price-item js-price" data-type="3">390₽</p>
+                <p class="form-banner__price-item js-price" data-type="4">890₽</p>
+              </div>
+              <form class="form-banner__form form" action="/" method="post"> 
+                <input class="form__input" type="text" name="name" placeholder="Ваше имя"/>
+                <input class="form__input" type="email" name="email" placeholder="Ваш E-mail"/>
+                <button class="form__btn btn">Записаться<img src="/img/svg/arrow_btn.svg" alt="arrow"/></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="benefits">
+      <div class="container">
+        <h2 class="benefits__title title">Что вы получаете?</h2>
+        <p class="benefits__desc">О нас в цифрах:</p>
+        <div class="benefits__list">
+          <div class="benefits__item benefit">
+            <p class="benefit__main">280<span>тысяч</span></p>
+            <p class="benefit__desc">учеников завершили курс. Доступ к 10&nbsp;занятиям плюс 2&nbsp;бонусных блока</p>
+          </div>
+          <div class="benefits__item benefit benefit--reverse">
+            <p class="benefit__desc">Совместный опыт авторов в&nbsp;психотерапии</p>
+            <p class="benefit__main">50<span>лет</span></p>
+          </div>
+          <div class="benefits__item benefit benefit--big">
+            <p class="benefit__main">88<span>%</span></p>
+            <p class="benefit__desc">учеников смогли избавиться от застарелых и&nbsp;хронических заболеваний!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="composition" id="composition">
+      <div class="container">
+        <h2 class="composition__title title">Из чего состоит курс?</h2>
+        <div class="composition__desc">
+          <p class="composition__text"><span>Вас ждет 10 интенсивов и аудио практик с домашними заданиями </span>- это уроки по авторской методике, посвященные базовому разбору психосоматики.</p>
+          <div class="composition__photo">
+            <picture>
+              <source type="image/webp" media="(min-width:480px)" srcset="/img/lamp.png"/>
+              <source media="(min-width:480px)" srcset="/img/lamp.png"/>
+              <source type="image/webp" media="(min-width:300px)" srcset="/img/lamp_mob.webp"/>
+              <source media="(min-width:300px)" srcset="/img/lamp_mob.png"/><img src="/img/lamp.png" alt="lamp"/>
+            </picture>
+          </div>
+          <p class="composition__text"><span>К каждому уроку идет домашнее задание,</span> которое поможет в проработке вас и выздоровлению.</p>
+        </div>
+        <div class="composition__bottom js-lessons">
+          <div class="composition__lesson lesson">
+            <div class="lesson__top">
+              <h4 class="lesson__title">Новая парадигма здоровья</h4>
+              <p class="lesson__label">УРОК</p>
+            </div>
+            <p class="lesson__desc">Как формируется психосоматический компонент? Что на это влияет? Как предотвратить? Что делать сейчас?</p>
+          </div>
+          <div class="composition__lesson lesson">
+            <div class="lesson__top">
+              <h4 class="lesson__title">Почему эмоции переходят в тело и приводят к болезни?</h4>
+              <p class="lesson__label">УРОК</p>
+            </div>
+            <p class="lesson__desc">Какие фазы проходит биологическая программа? Особенности развития по Фрейду. </p>
+          </div>
+          <div class="composition__lesson lesson">
+            <div class="lesson__top">
+              <h4 class="lesson__title">Дыхательная система и первый этаж биологии</h4>
+              <p class="lesson__label">УРОК</p>
+            </div>
+            <p class="lesson__desc">Нос, аденоиды, гортань, бронхи, легкие. Что на них влияет и что с этим делать?</p>
+          </div>
+          <div class="composition__lesson lesson">
+            <div class="lesson__top">
+              <h4 class="lesson__title">Новая парадигма здоровья</h4>
+              <p class="lesson__label">УРОК</p>
+            </div>
+            <p class="lesson__desc">Как формируется психосоматический компонент? Что на это влияет? Как предотвратить? Что делать сейчас?</p>
+          </div>
+          <div class="composition__lesson lesson">
+            <div class="lesson__top">
+              <h4 class="lesson__title">Почему эмоции переходят в тело и приводят к болезни?</h4>
+              <p class="lesson__label">УРОК</p>
+            </div>
+            <p class="lesson__desc">Какие фазы проходит биологическая программа? Особенности развития по Фрейду. </p>
+          </div>
+          <div class="composition__lesson lesson">
+            <div class="lesson__top">
+              <h4 class="lesson__title">Дыхательная система и первый этаж биологии</h4>
+              <p class="lesson__label">УРОК</p>
+            </div>
+            <p class="lesson__desc">Нос, аденоиды, гортань, бронхи, легкие. Что на них влияет и что с этим делать?</p>
+          </div>
+        </div>
+        <button class="composition__btn btn js-show-lessons">посмотреть весь курс<img src="/img/svg/arrow_btn.svg" alt="arrow"/></button>
+      </div>
+    </section>
+    <div class="container">
+      <div class="line"></div>
+    </div>
+    <section class="reviews" id="reviews">
+      <div class="container">
+        <h2 class="reviews__title title">Отзывы</h2>
+        <div class="reviews__list js-reviews-slider">
+          <div class="review reviews__item">
+            <div class="review__content">
+              <div class="review__photo-wrap">
+                <picture>
+                  <source srcset="/img/review_1.webp" type="image/webp"/><img class="review__photo" src="/img/review_1.png" alt="Елена Великая"/>
+                </picture>
+                <div class="review__wrap review__wrap--mob">
+                  <p class="review__name">Елена Великая</p>
+                  <p class="review__city">Москва</p>
+                </div>
+              </div>
+              <div class="review__info">
+                <div class="review__wrap review__wrap--desc">
+                  <p class="review__name">Елена Великая</p>
+                  <p class="review__city">Москва</p>
+                </div>
+                <p class="review__text js-text-review">Давно страдала от болей в спине. Врач поставил диагноз остеохондроз, выписал кучу дорогих анализов и лекарств. Спина болела, лекарства не действовали. Стала искать другие варианты и в поисках каких-то настроек наткнулась на курс по психосоматике. Моя тема - взваливать на себя слишком много! Благодаря Олегу и его команде я стала учиться разгружать себя, делать лучше, да меньше. Начала отказывать тем, кто сидел «на шее». Вот уже полгода как спина практически не болит! Спасибо вам огромное!</p>
+                <p class="review__btn js-btn-review" data-text="Скрыть...">Читать весь отзыв...</p>
+              </div>
+            </div>
+          </div>
+          <div class="review reviews__item">
+            <div class="review__content">
+              <div class="review__photo-wrap">
+                <picture>
+                  <source srcset="/img/review_2.webp" type="image/webp"/><img class="review__photo" src="/img/review_2.png" alt="Вячеслав Подгорный"/>
+                </picture>
+                <div class="review__wrap review__wrap--mob">
+                  <p class="review__name">Вячеслав Подгорный</p>
+                  <p class="review__city">Челябинск</p>
+                </div>
+              </div>
+              <div class="review__info">
+                <div class="review__wrap review__wrap--desc">
+                  <p class="review__name">Вячеслав Подгорный</p>
+                  <p class="review__city">Челябинск</p>
+                </div>
+                <p class="review__text js-text-review">У меня пухли пальцы и суставы. Ни мази, ни таблетки не могли это остановить. И работа у меня вроде не сильно трудная, я водитель. С чего пухли - не понимал. И вот вдруг курс - заманили меня словами «Узнайте, как вылечиться без лекарств». Оказалось, что я давно забросил свое любимое хобби и мои руки как бы скучали по нему. Как только стал полчаса в день уделять деревяшкам, болезнь начала отступать. Надо же - все проблемы реально кроются в голове! Я и не думал, что такое вообще возможно!</p>
+                <p class="review__btn js-btn-review" data-text="Скрыть...">Читать весь отзыв...</p>
+              </div>
+            </div>
+          </div>
+          <div class="review reviews__item">
+            <div class="review__content">
+              <div class="review__photo-wrap">
+                <picture>
+                  <source srcset="/img/review_2.webp" type="image/webp"/><img class="review__photo" src="/img/review_2.png" alt="Вячеслав Подгорный"/>
+                </picture>
+                <div class="review__wrap review__wrap--mob">
+                  <p class="review__name">Вячеслав Подгорный</p>
+                  <p class="review__city">Челябинск</p>
+                </div>
+              </div>
+              <div class="review__info">
+                <div class="review__wrap review__wrap--desc">
+                  <p class="review__name">Вячеслав Подгорный</p>
+                  <p class="review__city">Челябинск</p>
+                </div>
+                <p class="review__text js-text-review">У меня пухли пальцы и суставы. Ни мази, ни таблетки не могли это остановить. И работа у меня вроде не сильно трудная, я водитель. С чего пухли - не понимал. И вот вдруг курс - заманили меня словами «Узнайте, как вылечиться без лекарств». Оказалось, что я давно забросил свое любимое хобби и мои руки как бы скучали по нему. Как только стал полчаса в день уделять деревяшкам, болезнь начала отступать. Надо же - все проблемы реально кроются в голове! Я и не думал, что такое вообще возможно!</p>
+                <p class="review__btn js-btn-review" data-text="Скрыть...">Читать весь отзыв...</p>
+              </div>
+            </div>
+          </div>
+          <div class="review reviews__item">
+            <div class="review__content">
+              <div class="review__photo-wrap">
+                <picture>
+                  <source srcset="/img/review_2.webp" type="image/webp"/><img class="review__photo" src="/img/review_2.png" alt="Вячеслав Подгорный"/>
+                </picture>
+                <div class="review__wrap review__wrap--mob">
+                  <p class="review__name">Вячеслав Подгорный</p>
+                  <p class="review__city">Челябинск</p>
+                </div>
+              </div>
+              <div class="review__info">
+                <div class="review__wrap review__wrap--desc">
+                  <p class="review__name">Вячеслав Подгорный</p>
+                  <p class="review__city">Челябинск</p>
+                </div>
+                <p class="review__text js-text-review">У меня пухли пальцы и суставы. Ни мази, ни таблетки не могли это остановить. И работа у меня вроде не сильно трудная, я водитель. С чего пухли - не понимал. И вот вдруг курс - заманили меня словами «Узнайте, как вылечиться без лекарств». Оказалось, что я давно забросил свое любимое хобби и мои руки как бы скучали по нему. Как только стал полчаса в день уделять деревяшкам, болезнь начала отступать. Надо же - все проблемы реально кроются в голове! Я и не думал, что такое вообще возможно!</p>
+                <p class="review__btn js-btn-review" data-text="Скрыть...">Читать весь отзыв...</p>
+              </div>
+            </div>
+          </div>
+          <div class="review reviews__item">
+            <div class="review__content">
+              <div class="review__photo-wrap">
+                <picture>
+                  <source srcset="/img/review_2.webp" type="image/webp"/><img class="review__photo" src="/img/review_2.png" alt="Вячеслав Подгорный"/>
+                </picture>
+                <div class="review__wrap review__wrap--mob">
+                  <p class="review__name">Вячеслав Подгорный</p>
+                  <p class="review__city">Челябинск</p>
+                </div>
+              </div>
+              <div class="review__info">
+                <div class="review__wrap review__wrap--desc">
+                  <p class="review__name">Вячеслав Подгорный</p>
+                  <p class="review__city">Челябинск</p>
+                </div>
+                <p class="review__text js-text-review">У меня пухли пальцы и суставы. Ни мази, ни таблетки не могли это остановить. И работа у меня вроде не сильно трудная, я водитель. С чего пухли - не понимал. И вот вдруг курс - заманили меня словами «Узнайте, как вылечиться без лекарств». Оказалось, что я давно забросил свое любимое хобби и мои руки как бы скучали по нему. Как только стал полчаса в день уделять деревяшкам, болезнь начала отступать. Надо же - все проблемы реально кроются в голове! Я и не думал, что такое вообще возможно!</p>
+                <p class="review__btn js-btn-review" data-text="Скрыть...">Читать весь отзыв...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="header header--last">
+      <div class="container">
+        <div class="header__wrapper">
+          <h1 class="header__title">Онлайн программа по&nbsp;Психосоматике:<span>«Шифр к телу»</span></h1>
+          <div class="header__label-wrap">
+            <p class="header__label text-s">Расшифруй свою болезнь!</p>
+          </div>
+          <p class="header__text text-s">Программа включает 10 основных уроков, домашнее задание к каждому из уроков и аудио практики:</p>
+          <ul class="header__list list-content text-s">
+            <li class="list-content__item header__item"><span>Как победить: </span>гипертонию, язвенную болезнь, артрит, мигрень и&nbsp;многое другое</li>
+            <li class="list-content__item header__item"><span>Расшифруете, </span>по каким моделям классифицируют психосоматические расстройства</li>
+            <li class="list-content__item header__item"><span>Разберетесь </span>в личных проблемах и научитесь поддерживать близких и&nbsp;ваших деток</li>
+          </ul>
+        </div>
+        <div class="header__form-banner">
+          <div class="form-banner">
+            <div class="form-banner__top">
+              <div class="form-banner__top-left">
+                <h4 class="form-banner__title">Запишись на программу из 10&nbsp;уроков и аудио практик сегодня</h4>
+                <p class="form-banner__desc text-s">пока еще действует спец цена и получи <span>2 бонусных урока </span>«Деньги. Используй кризис. Работай в удовольствие» и «Отношения: Я, партнер, родители»</p>
+              </div>
+              <div class="form-banner__timer">
+                <div class="timer-block">
+                  <p class="timer-block__text">До конца акции осталось:</p>
+                  <div class="timer-block__wrap">
+                    <div class="timer-block__num hours">00</div>
+                    <p class="timer-block__dots">:</p>
+                    <div class="timer-block__num minutes">00</div>
+                    <p class="timer-block__dots">:</p>
+                    <div class="timer-block__num seconds">00</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-banner__bottom">
+              <div class="form-banner__price">
+                <p class="form-banner__price-item active js-price" data-type="1">29₽</p>
+                <p class="form-banner__price-item js-price" data-type="2">89₽</p>
+                <p class="form-banner__price-item js-price" data-type="3">390₽</p>
+                <p class="form-banner__price-item js-price" data-type="4">890₽</p>
+              </div>
+              <form class="form-banner__form form" action="/" method="post"> 
+                <input class="form__input" type="text" name="name" placeholder="Ваше имя"/>
+                <input class="form__input" type="email" name="email" placeholder="Ваш E-mail"/>
+                <button class="form__btn btn">Записаться<img src="/img/svg/arrow_btn.svg" alt="arrow"/></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <p class="footer__text">120/90 - <span class="year">2021</span>. Все права защищены и принадлежат владельцу</p>
+      </div>
+    </footer>
+    <div class="overlay js-overlay"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollToPlugin.min.js"></script>
+    <script src="/js/main.js"></script>
+  </body>
+</html>
